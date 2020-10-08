@@ -13,8 +13,8 @@ import { hasEdited, withDisabledAddEdited } from "./edited";
 import { syncArray } from "./common";
 
 setInterval(() => {
-    mainModel.testField = "XXX " + new Date().toISOString().substr(17);
-    console.log(`CODE00000190 getEditableMeta(mainModel,"testField") = `, getEditableMeta(mainModel, "testField"));
+    mainModel.testField = "X aa489a XX " + new Date().toISOString().substr(17);
+    //console.log(`CODE00000190 getEditableMeta(mainModel,"testField") = `, getEditableMeta(mainModel, "testField"));
 }, 2000);
 
 export const TaskModelLinkOpts = {
@@ -25,7 +25,7 @@ export const TaskModelLinkOpts = {
             const { tasks } = decoderCurrentTasksApiResponse.runWithException(resp0?.data);
             return tasks;
         } catch (e) {
-            console.error(`CODE00000293 ERROR in refreshCurrentTasks ${e.message}`);
+            console.error(`CODE00000014 ERROR in refreshCurrentTasks ${e.message}`);
         }
         return [];
     },
@@ -50,6 +50,7 @@ export class MainModel {
 
     @ymeta({ et: "link", ...TaskModelLinkOpts }) currentTask: TaskModel | undefined;
     @ymeta({ et: "string", defaultValue: "XXX2" }) testField: string = "XXX2";
+//    @observable testField: string = "XXX2";
 
     @observable drawerOpen: boolean = false;
 

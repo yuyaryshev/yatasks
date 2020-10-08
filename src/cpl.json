@@ -1,642 +1,667 @@
 [
-    {
-        "cpl": 288,
-        "filePath": "src\\client\\clientTemp.ts",
-        "pos": 473
-    },
-    {
-        "cpl": 280,
-        "filePath": "src\\client\\clientTemp.ts",
-        "pos": 526
-    },
-    {
-        "cpl": 114,
-        "filePath": "src\\client\\components\\MessageBox.tsx",
-        "pos": 4857
-    },
-    {
-        "cpl": 115,
-        "filePath": "src\\client\\components\\TaskList.tsx",
-        "pos": 3723
-    },
-    {
-        "cpl": 116,
-        "filePath": "src\\client\\components\\Value\\index.tsx",
-        "pos": 917
-    },
-    {
-        "cpl": 117,
-        "filePath": "src\\client\\components\\Value\\index.tsx",
-        "pos": 1844
-    },
-    {
-        "cpl": 118,
-        "filePath": "src\\client\\components\\Value\\index.tsx",
-        "pos": 1997
-    },
-    {
-        "cpl": 119,
-        "filePath": "src\\client\\components\\Value\\ValueDate.tsx",
-        "pos": 2975
-    },
-    {
-        "cpl": 120,
-        "filePath": "src\\client\\components\\Value\\ValueDuration.tsx",
-        "pos": 2952
-    },
-    {
-        "cpl": 121,
-        "filePath": "src\\client\\components\\Value\\ValueEnum.tsx",
-        "pos": 1763
-    },
-    {
-        "cpl": 122,
-        "filePath": "src\\client\\components\\Value\\ValueLabels.tsx",
-        "pos": 1819
-    },
-    {
-        "cpl": 123,
-        "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
-        "pos": 1806
-    },
-    {
-        "cpl": 124,
-        "filePath": "src\\client\\components\\Value\\ValueMultiLink.tsx",
-        "pos": 2121
-    },
-    {
-        "cpl": 125,
-        "filePath": "src\\client\\components\\Value\\ValueString.tsx",
-        "pos": 1411
-    },
-    {
-        "cpl": 126,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 4476
-    },
-    {
-        "cpl": 127,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 5043
-    },
-    {
-        "cpl": 128,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 5608
-    },
-    {
-        "cpl": 129,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 6145
-    },
-    {
-        "cpl": 130,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 6667
-    },
-    {
-        "cpl": 1,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 7190
-    },
-    {
-        "cpl": 2,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 7812
-    },
-    {
-        "cpl": 3,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 18254
-    },
-    {
-        "cpl": 4,
-        "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-        "pos": 18450
-    },
-    {
-        "cpl": 208,
-        "filePath": "src\\client\\models\\ActionAreaModel.ts",
-        "pos": 1236
-    },
-    {
-        "cpl": 7,
-        "filePath": "src\\client\\models\\Editable_OLD.jsx",
-        "pos": 3315
-    },
-    {
-        "cpl": 8,
-        "filePath": "src\\client\\models\\Editable_OLD.jsx",
-        "pos": 10645
-    },
-    {
-        "cpl": 5,
-        "filePath": "src\\client\\models\\editFunctions.ts",
-        "pos": 1641
-    },
-    {
-        "cpl": 6,
-        "filePath": "src\\client\\models\\editFunctions.ts",
-        "pos": 1874
-    },
-    {
-        "cpl": 304,
-        "filePath": "src\\client\\models\\editFunctions.ts",
-        "pos": 2399
-    },
-    {
-        "cpl": 305,
-        "filePath": "src\\client\\models\\editFunctions.ts",
-        "pos": 3115
-    },
-    {
-        "cpl": 306,
-        "filePath": "src\\client\\models\\editFunctions.ts",
-        "pos": 3253
-    },
-    {
-        "cpl": 113,
-        "filePath": "src\\client\\models\\editFunctions.ts",
-        "pos": 4110
-    },
-    {
-        "cpl": 190,
-        "filePath": "src\\client\\models\\MainModel.ts",
-        "pos": 3230
-    },
-    {
-        "cpl": 309,
-        "filePath": "src\\client\\models\\PersonModel.ts",
-        "pos": 2858
-    },
-    {
-        "cpl": 191,
-        "filePath": "src\\client\\models\\PersonModel.ts",
-        "pos": 2975
-    },
-    {
-        "cpl": 192,
-        "filePath": "src\\client\\models\\PersonModel.ts",
-        "pos": 3021
-    },
-    {
-        "cpl": 100,
-        "filePath": "src\\client\\models\\PersonModel.ts",
-        "pos": 3217
-    },
-    {
-        "cpl": 303,
-        "filePath": "src\\client\\models\\TaskModel.ts",
-        "pos": 5472
-    },
-    {
-        "cpl": 289,
-        "filePath": "src\\client\\models\\TaskModel.ts",
-        "pos": 5589
-    },
-    {
-        "cpl": 290,
-        "filePath": "src\\client\\models\\TaskModel.ts",
-        "pos": 5635
-    },
-    {
-        "cpl": 203,
-        "filePath": "src\\client\\models\\TaskModel.ts",
-        "pos": 6248
-    },
-    {
-        "cpl": 293,
-        "filePath": "src\\client\\models\\TaskModel.ts",
-        "pos": 6818
-    },
-    {
-        "cpl": 200,
-        "filePath": "src\\client\\models\\TaskModel.ts",
-        "pos": 7171
-    },
-    {
-        "cpl": 297,
-        "filePath": "src\\domains\\commonDbUtils.ts",
-        "pos": 2948
-    },
-    {
-        "cpl": 209,
-        "filePath": "src\\domains\\commonDbUtils.ts",
-        "pos": 3563
-    },
-    {
-        "cpl": 292,
-        "filePath": "src\\domains\\commonDbUtils.ts",
-        "pos": 3984
-    },
-    {
-        "cpl": 101,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 1377
-    },
-    {
-        "cpl": 202,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 1756
-    },
-    {
-        "cpl": 102,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 2388
-    },
-    {
-        "cpl": 205,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 2749
-    },
-    {
-        "cpl": 103,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 3291
-    },
-    {
-        "cpl": 188,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 3654
-    },
-    {
-        "cpl": 104,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 4193
-    },
-    {
-        "cpl": 310,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 5363
-    },
-    {
-        "cpl": 311,
-        "filePath": "src\\server\\controllers\\person.ts",
-        "pos": 5565
-    },
-    {
-        "cpl": 204,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 1407
-    },
-    {
-        "cpl": 312,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 1776
-    },
-    {
-        "cpl": 201,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 2390
-    },
-    {
-        "cpl": 298,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 2766
-    },
-    {
-        "cpl": 96,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 3394
-    },
-    {
-        "cpl": 299,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 3751
-    },
-    {
-        "cpl": 206,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 4279
-    },
-    {
-        "cpl": 300,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 4638
-    },
-    {
-        "cpl": 186,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 5155
-    },
-    {
-        "cpl": 301,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 6325
-    },
-    {
-        "cpl": 302,
-        "filePath": "src\\server\\controllers\\task.ts",
-        "pos": 6527
-    },
-    {
-        "cpl": 105,
-        "filePath": "src\\server\\models\\person.ts",
-        "pos": 1873
-    },
-    {
-        "cpl": 106,
-        "filePath": "src\\server\\models\\person.ts",
-        "pos": 2280
-    },
-    {
-        "cpl": 107,
-        "filePath": "src\\server\\models\\person.ts",
-        "pos": 2980
-    },
-    {
-        "cpl": 187,
-        "filePath": "src\\server\\models\\task.ts",
-        "pos": 1884
-    },
-    {
-        "cpl": 97,
-        "filePath": "src\\server\\models\\task.ts",
-        "pos": 2422
-    },
-    {
-        "cpl": 98,
-        "filePath": "src\\server\\models\\task.ts",
-        "pos": 2817
-    },
-    {
-        "cpl": 189,
-        "filePath": "src\\server\\models\\task.ts",
-        "pos": 4550
-    },
-    {
-        "cpl": 94,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 2212
-    },
-    {
-        "cpl": 197,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 2396
-    },
-    {
-        "cpl": 198,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 2715
-    },
-    {
-        "cpl": 199,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 2773
-    },
-    {
-        "cpl": 307,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 4001
-    },
-    {
-        "cpl": 110,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 4517
-    },
-    {
-        "cpl": 111,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 4610
-    },
-    {
-        "cpl": 112,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 4740
-    },
-    {
-        "cpl": 308,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 4992
-    },
-    {
-        "cpl": 284,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 5067
-    },
-    {
-        "cpl": 183,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 5662
-    },
-    {
-        "cpl": 291,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 5921
-    },
-    {
-        "cpl": 281,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 6667
-    },
-    {
-        "cpl": 282,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 6825
-    },
-    {
-        "cpl": 283,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 7061
-    },
-    {
-        "cpl": 279,
-        "filePath": "src\\server\\startApiServer.ts",
-        "pos": 7115
-    },
-    {
-        "cpl": 210,
-        "filePath": "src\\Yjira\\batchWriter.ts",
-        "pos": 6094
-    },
-    {
-        "cpl": 296,
-        "filePath": "src\\Yjira\\JiraStub.ts",
-        "pos": 2963
-    },
-    {
-        "cpl": 108,
-        "filePath": "src\\Yjira\\JiraStub.ts",
-        "pos": 3205
-    },
-    {
-        "cpl": 185,
-        "filePath": "src\\Yjira\\JiraStub.ts",
-        "pos": 5173
-    },
-    {
-        "cpl": 109,
-        "filePath": "src\\Yjira\\JiraStub.ts",
-        "pos": 5428
-    },
-    {
-        "cpl": 27,
-        "filePath": "src\\Yjira\\JiraStub.ts",
-        "pos": 5619
-    },
-    {
-        "cpl": 28,
-        "filePath": "src\\Yjira\\JiraStub.ts",
-        "pos": 6120
-    },
-    {
-        "cpl": 313,
-        "filePath": "src\\Yjira\\JiraStub.ts",
-        "pos": 6383
-    },
-    {
-        "cpl": 29,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 13981
-    },
-    {
-        "cpl": 30,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 14207
-    },
-    {
-        "cpl": 31,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 14708
-    },
-    {
-        "cpl": 32,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 15537
-    },
-    {
-        "cpl": 99,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 15852
-    },
-    {
-        "cpl": 366,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 16098
-    },
-    {
-        "cpl": 367,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 16980
-    },
-    {
-        "cpl": 207,
-        "filePath": "src\\Yjira\\JiraWrapper.ts",
-        "pos": 19326
-    },
-    {
-        "cpl": 131,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 547
-    },
-    {
-        "cpl": 132,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 876
-    },
-    {
-        "cpl": 133,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 1334
-    },
-    {
-        "cpl": 134,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 1471
-    },
-    {
-        "cpl": 135,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 1594
-    },
-    {
-        "cpl": 136,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 1891
-    },
-    {
-        "cpl": 137,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 1992
-    },
-    {
-        "cpl": 138,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 2253
-    },
-    {
-        "cpl": 139,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 2354
-    },
-    {
-        "cpl": 140,
-        "filePath": "src\\Yoracle\\funcs.ts",
-        "pos": 2427
-    },
-    {
-        "cpl": 193,
-        "filePath": "src\\Yoracle\\OracleStub.ts",
-        "pos": 1481
-    },
-    {
-        "cpl": 194,
-        "filePath": "src\\Yoracle\\OracleStub.ts",
-        "pos": 1713
-    },
-    {
-        "cpl": 195,
-        "filePath": "src\\Yoracle\\OracleStub.ts",
-        "pos": 1857
-    },
-    {
-        "cpl": 196,
-        "filePath": "src\\Yoracle\\OracleStub.ts",
-        "pos": 3113
-    },
-    {
-        "cpl": 95,
-        "filePath": "src\\Yoracle\\OracleStub.ts",
-        "pos": 4088
-    },
-    {
-        "cpl": 294,
-        "filePath": "src\\Ystd\\expectOne.ts",
-        "pos": 525
-    },
-    {
-        "cpl": 295,
-        "filePath": "src\\Ystd\\expectOne.ts",
-        "pos": 588
-    },
-    {
-        "cpl": 278,
-        "filePath": "src\\Ystd\\globalHandler.ts",
-        "pos": 287
-    },
-    {
-        "cpl": 285,
-        "filePath": "src\\Ystd\\linearDataInterpolation.ts",
-        "pos": 1244
-    },
-    {
-        "cpl": 286,
-        "filePath": "src\\Ystd\\linearDataInterpolation.ts",
-        "pos": 1312
-    },
-    {
-        "cpl": 1008,
-        "filePath": "src\\Ystd\\manageableTimer.ts",
-        "pos": 3315
-    },
-    {
-        "cpl": 287,
-        "filePath": "src\\Ystd\\projectDir.ts",
-        "pos": 547
-    },
-    {
-        "cpl": 184,
-        "filePath": "src\\Ystd\\YTimeIntervals.ts",
-        "pos": 8204
-    }
+ {
+  "cpl": 288,
+  "filePath": "src\\client\\clientTemp.ts",
+  "pos": 485
+ },
+ {
+  "cpl": 280,
+  "filePath": "src\\client\\clientTemp.ts",
+  "pos": 538
+ },
+ {
+  "cpl": 114,
+  "filePath": "src\\client\\components\\MessageBox.tsx",
+  "pos": 4857
+ },
+ {
+  "cpl": 115,
+  "filePath": "src\\client\\components\\TaskList.tsx",
+  "pos": 3723
+ },
+ {
+  "cpl": 116,
+  "filePath": "src\\client\\components\\Value\\index.tsx",
+  "pos": 917
+ },
+ {
+  "cpl": 117,
+  "filePath": "src\\client\\components\\Value\\index.tsx",
+  "pos": 1844
+ },
+ {
+  "cpl": 118,
+  "filePath": "src\\client\\components\\Value\\index.tsx",
+  "pos": 1997
+ },
+ {
+  "cpl": 119,
+  "filePath": "src\\client\\components\\Value\\ValueDate.tsx",
+  "pos": 3141
+ },
+ {
+  "cpl": 120,
+  "filePath": "src\\client\\components\\Value\\ValueDuration.tsx",
+  "pos": 3284
+ },
+ {
+  "cpl": 121,
+  "filePath": "src\\client\\components\\Value\\ValueEnum.tsx",
+  "pos": 1763
+ },
+ {
+  "cpl": 122,
+  "filePath": "src\\client\\components\\Value\\ValueLabels.tsx",
+  "pos": 1834
+ },
+ {
+  "cpl": 9,
+  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
+  "pos": 1797
+ },
+ {
+  "cpl": 10,
+  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
+  "pos": 1965
+ },
+ {
+  "cpl": 11,
+  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
+  "pos": 2361
+ },
+ {
+  "cpl": 123,
+  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
+  "pos": 3902
+ },
+ {
+  "cpl": 12,
+  "filePath": "src\\client\\components\\Value\\ValueMultiLink.tsx",
+  "pos": 1984
+ },
+ {
+  "cpl": 124,
+  "filePath": "src\\client\\components\\Value\\ValueMultiLink.tsx",
+  "pos": 3347
+ },
+ {
+  "cpl": 125,
+  "filePath": "src\\client\\components\\Value\\ValueString.tsx",
+  "pos": 1411
+ },
+ {
+  "cpl": 126,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 4476
+ },
+ {
+  "cpl": 127,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 5043
+ },
+ {
+  "cpl": 128,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 5608
+ },
+ {
+  "cpl": 129,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 6145
+ },
+ {
+  "cpl": 130,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 6667
+ },
+ {
+  "cpl": 1,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 7190
+ },
+ {
+  "cpl": 2,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 7812
+ },
+ {
+  "cpl": 3,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 18299
+ },
+ {
+  "cpl": 4,
+  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
+  "pos": 18495
+ },
+ {
+  "cpl": 208,
+  "filePath": "src\\client\\models\\ActionAreaModel.ts",
+  "pos": 1236
+ },
+ {
+  "cpl": 7,
+  "filePath": "src\\client\\models\\Editable_OLD.jsx",
+  "pos": 3315
+ },
+ {
+  "cpl": 8,
+  "filePath": "src\\client\\models\\Editable_OLD.jsx",
+  "pos": 10645
+ },
+ {
+  "cpl": 5,
+  "filePath": "src\\client\\models\\editFunctions.ts",
+  "pos": 1675
+ },
+ {
+  "cpl": 6,
+  "filePath": "src\\client\\models\\editFunctions.ts",
+  "pos": 1908
+ },
+ {
+  "cpl": 304,
+  "filePath": "src\\client\\models\\editFunctions.ts",
+  "pos": 2433
+ },
+ {
+  "cpl": 305,
+  "filePath": "src\\client\\models\\editFunctions.ts",
+  "pos": 3149
+ },
+ {
+  "cpl": 306,
+  "filePath": "src\\client\\models\\editFunctions.ts",
+  "pos": 3287
+ },
+ {
+  "cpl": 113,
+  "filePath": "src\\client\\models\\editFunctions.ts",
+  "pos": 4144
+ },
+ {
+  "cpl": 190,
+  "filePath": "src\\client\\models\\MainModel.ts",
+  "pos": 1321
+ },
+ {
+  "cpl": 14,
+  "filePath": "src\\client\\models\\MainModel.ts",
+  "pos": 3948
+ },
+ {
+  "cpl": 309,
+  "filePath": "src\\client\\models\\PersonModel.ts",
+  "pos": 2858
+ },
+ {
+  "cpl": 191,
+  "filePath": "src\\client\\models\\PersonModel.ts",
+  "pos": 2975
+ },
+ {
+  "cpl": 192,
+  "filePath": "src\\client\\models\\PersonModel.ts",
+  "pos": 3021
+ },
+ {
+  "cpl": 100,
+  "filePath": "src\\client\\models\\PersonModel.ts",
+  "pos": 3217
+ },
+ {
+  "cpl": 303,
+  "filePath": "src\\client\\models\\TaskModel.ts",
+  "pos": 5487
+ },
+ {
+  "cpl": 289,
+  "filePath": "src\\client\\models\\TaskModel.ts",
+  "pos": 5604
+ },
+ {
+  "cpl": 290,
+  "filePath": "src\\client\\models\\TaskModel.ts",
+  "pos": 5650
+ },
+ {
+  "cpl": 203,
+  "filePath": "src\\client\\models\\TaskModel.ts",
+  "pos": 6263
+ },
+ {
+  "cpl": 13,
+  "filePath": "src\\client\\models\\TaskModel.ts",
+  "pos": 6833
+ },
+ {
+  "cpl": 200,
+  "filePath": "src\\client\\models\\TaskModel.ts",
+  "pos": 7186
+ },
+ {
+  "cpl": 297,
+  "filePath": "src\\domains\\commonDbUtils.ts",
+  "pos": 2948
+ },
+ {
+  "cpl": 209,
+  "filePath": "src\\domains\\commonDbUtils.ts",
+  "pos": 3563
+ },
+ {
+  "cpl": 292,
+  "filePath": "src\\domains\\commonDbUtils.ts",
+  "pos": 4182
+ },
+ {
+  "cpl": 101,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 1377
+ },
+ {
+  "cpl": 202,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 1756
+ },
+ {
+  "cpl": 102,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 2388
+ },
+ {
+  "cpl": 205,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 2749
+ },
+ {
+  "cpl": 103,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 3291
+ },
+ {
+  "cpl": 188,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 3654
+ },
+ {
+  "cpl": 104,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 4193
+ },
+ {
+  "cpl": 310,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 5363
+ },
+ {
+  "cpl": 311,
+  "filePath": "src\\server\\controllers\\person.ts",
+  "pos": 5565
+ },
+ {
+  "cpl": 204,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 1407
+ },
+ {
+  "cpl": 312,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 1776
+ },
+ {
+  "cpl": 201,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 2390
+ },
+ {
+  "cpl": 298,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 2766
+ },
+ {
+  "cpl": 96,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 3394
+ },
+ {
+  "cpl": 299,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 3751
+ },
+ {
+  "cpl": 206,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 4279
+ },
+ {
+  "cpl": 300,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 4638
+ },
+ {
+  "cpl": 186,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 5155
+ },
+ {
+  "cpl": 301,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 6325
+ },
+ {
+  "cpl": 302,
+  "filePath": "src\\server\\controllers\\task.ts",
+  "pos": 6527
+ },
+ {
+  "cpl": 105,
+  "filePath": "src\\server\\models\\person.ts",
+  "pos": 2037
+ },
+ {
+  "cpl": 106,
+  "filePath": "src\\server\\models\\person.ts",
+  "pos": 2444
+ },
+ {
+  "cpl": 107,
+  "filePath": "src\\server\\models\\person.ts",
+  "pos": 3144
+ },
+ {
+  "cpl": 187,
+  "filePath": "src\\server\\models\\task.ts",
+  "pos": 2393
+ },
+ {
+  "cpl": 97,
+  "filePath": "src\\server\\models\\task.ts",
+  "pos": 2931
+ },
+ {
+  "cpl": 98,
+  "filePath": "src\\server\\models\\task.ts",
+  "pos": 3326
+ },
+ {
+  "cpl": 189,
+  "filePath": "src\\server\\models\\task.ts",
+  "pos": 5059
+ },
+ {
+  "cpl": 94,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 2212
+ },
+ {
+  "cpl": 197,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 2396
+ },
+ {
+  "cpl": 198,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 2715
+ },
+ {
+  "cpl": 199,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 2773
+ },
+ {
+  "cpl": 307,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 4001
+ },
+ {
+  "cpl": 110,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 4517
+ },
+ {
+  "cpl": 111,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 4610
+ },
+ {
+  "cpl": 112,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 4740
+ },
+ {
+  "cpl": 308,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 4992
+ },
+ {
+  "cpl": 284,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 5067
+ },
+ {
+  "cpl": 183,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 5662
+ },
+ {
+  "cpl": 291,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 5921
+ },
+ {
+  "cpl": 281,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 6667
+ },
+ {
+  "cpl": 282,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 6825
+ },
+ {
+  "cpl": 283,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 7061
+ },
+ {
+  "cpl": 279,
+  "filePath": "src\\server\\startApiServer.ts",
+  "pos": 7115
+ },
+ {
+  "cpl": 210,
+  "filePath": "src\\Yjira\\batchWriter.ts",
+  "pos": 6094
+ },
+ {
+  "cpl": 296,
+  "filePath": "src\\Yjira\\JiraStub.ts",
+  "pos": 2963
+ },
+ {
+  "cpl": 108,
+  "filePath": "src\\Yjira\\JiraStub.ts",
+  "pos": 3205
+ },
+ {
+  "cpl": 185,
+  "filePath": "src\\Yjira\\JiraStub.ts",
+  "pos": 5173
+ },
+ {
+  "cpl": 109,
+  "filePath": "src\\Yjira\\JiraStub.ts",
+  "pos": 5428
+ },
+ {
+  "cpl": 27,
+  "filePath": "src\\Yjira\\JiraStub.ts",
+  "pos": 5619
+ },
+ {
+  "cpl": 28,
+  "filePath": "src\\Yjira\\JiraStub.ts",
+  "pos": 6120
+ },
+ {
+  "cpl": 313,
+  "filePath": "src\\Yjira\\JiraStub.ts",
+  "pos": 6383
+ },
+ {
+  "cpl": 29,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 13981
+ },
+ {
+  "cpl": 30,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 14207
+ },
+ {
+  "cpl": 31,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 14708
+ },
+ {
+  "cpl": 32,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 15537
+ },
+ {
+  "cpl": 99,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 15852
+ },
+ {
+  "cpl": 366,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 16098
+ },
+ {
+  "cpl": 367,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 16980
+ },
+ {
+  "cpl": 207,
+  "filePath": "src\\Yjira\\JiraWrapper.ts",
+  "pos": 19326
+ },
+ {
+  "cpl": 131,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 547
+ },
+ {
+  "cpl": 132,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 876
+ },
+ {
+  "cpl": 133,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 1334
+ },
+ {
+  "cpl": 134,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 1471
+ },
+ {
+  "cpl": 135,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 1594
+ },
+ {
+  "cpl": 136,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 1891
+ },
+ {
+  "cpl": 137,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 1992
+ },
+ {
+  "cpl": 138,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 2253
+ },
+ {
+  "cpl": 139,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 2354
+ },
+ {
+  "cpl": 140,
+  "filePath": "src\\Yoracle\\funcs.ts",
+  "pos": 2427
+ },
+ {
+  "cpl": 193,
+  "filePath": "src\\Yoracle\\OracleStub.ts",
+  "pos": 1481
+ },
+ {
+  "cpl": 194,
+  "filePath": "src\\Yoracle\\OracleStub.ts",
+  "pos": 1713
+ },
+ {
+  "cpl": 195,
+  "filePath": "src\\Yoracle\\OracleStub.ts",
+  "pos": 1857
+ },
+ {
+  "cpl": 196,
+  "filePath": "src\\Yoracle\\OracleStub.ts",
+  "pos": 3113
+ },
+ {
+  "cpl": 95,
+  "filePath": "src\\Yoracle\\OracleStub.ts",
+  "pos": 4088
+ },
+ {
+  "cpl": 294,
+  "filePath": "src\\Ystd\\expectOne.ts",
+  "pos": 525
+ },
+ {
+  "cpl": 295,
+  "filePath": "src\\Ystd\\expectOne.ts",
+  "pos": 588
+ },
+ {
+  "cpl": 278,
+  "filePath": "src\\Ystd\\globalHandler.ts",
+  "pos": 287
+ },
+ {
+  "cpl": 285,
+  "filePath": "src\\Ystd\\linearDataInterpolation.ts",
+  "pos": 1244
+ },
+ {
+  "cpl": 286,
+  "filePath": "src\\Ystd\\linearDataInterpolation.ts",
+  "pos": 1312
+ },
+ {
+  "cpl": 1008,
+  "filePath": "src\\Ystd\\manageableTimer.ts",
+  "pos": 3315
+ },
+ {
+  "cpl": 287,
+  "filePath": "src\\Ystd\\projectDir.ts",
+  "pos": 547
+ },
+ {
+  "cpl": 184,
+  "filePath": "src\\Ystd\\YTimeIntervals.ts",
+  "pos": 8204
+ }
 ]

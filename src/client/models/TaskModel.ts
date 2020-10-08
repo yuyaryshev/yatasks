@@ -16,6 +16,7 @@ import { DateTime } from "luxon";
 import { optionalDateToString } from "../../domains/commonDbUtils";
 import { Editable, ymeta } from "./ymeta";
 import { mainModel, PersonModelLinkOpts, TaskModelLinkOpts } from "./MainModel";
+import { observable } from "mobx";
 //import { notifyChanges } from "./MainModel";
 
 const REFRESH_CURRENT_TASKS_INTERVAL = 1000;
@@ -25,6 +26,9 @@ export class TaskModel implements Editable {
     // GRP_task_fields
     id: number = 0;
     uid: string = newId();
+
+    @observable name2:string = "";
+
     @ymeta({ et: "string" }) name: string = "";
     @ymeta({ et: "enum", values: TaskTypeValues, defaultValue: "plain" }) type: TaskType = "plain";
     @ymeta({ et: "string", multiline: true }) description: string = "";
@@ -138,7 +142,7 @@ export async function refreshCurrentTasks() {
                     syncArray(mainModel.tasks.items, tasks, () => new TaskModel());
                 });
         } catch (e) {
-            console.error(`CODE00000293 ERROR in refreshCurrentTasks ${e.message}`);
+            console.error(`CODE00000013 ERROR in refreshCurrentTasks ${e.message}`);
         }
     if (REFRESH_CURRENT_TASKS_INTERVAL !== undefined) setTimeout(refreshCurrentTasks, REFRESH_CURRENT_TASKS_INTERVAL);
 }

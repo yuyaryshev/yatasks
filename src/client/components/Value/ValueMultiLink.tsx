@@ -40,7 +40,7 @@ export const ValueMultiLink: React.FC<{
                     if (ym && ym.et === "link" && ym.getAutocompleteItemsAsync)
                         setAsyncAutocompleteItems(await ym.getAutocompleteItemsAsync(searchQuery));
                 } catch (e) {
-                    console.error(`CODE00000000 Failed to load ValueLink values`, e);
+                    console.error(`CODE00000012 Failed to load ValueLink values`, e);
                 }
             }, searchTimeout || 1000)
         );

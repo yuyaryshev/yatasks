@@ -208,10 +208,6 @@ export const MainPage: React.FC<{ m: MainModel }> = ({ m }) => {
                         </Toolbar>
                     </AppBar>
                     <Paper className={classes.calendarArea} square>
-                        {/*testField.default: <Value m={m.testField} />*/}
-                        {/*testField.editor: <Value m={m.testField} editor />*/}
-                        {/*testField.disabled: <Value m={m.testField} disabled />*/}
-                        {/*testField.textOnly: <Value m={m.testField} textOnly />*/}
                         testField.rawValue: {m.testField}
                         <Typography>TBD calendarArea</Typography>
                     </Paper>

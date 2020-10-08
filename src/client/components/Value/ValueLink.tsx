@@ -38,13 +38,13 @@ export const ValueLink: React.FC<{
         setSearchTimeoutHandle(
             setTimeout(async function executeSearchQuery() {
                 try {
-                    console.log(`CODE00000000 STARTED ASYNC QUERY ${searchQueryV}`);
+                    console.log(`CODE00000009 STARTED ASYNC QUERY ${searchQueryV}`);
                     if (ym && ym.et === "link" && ym.getAutocompleteItemsAsync)
                         setAsyncAutocompleteItems(await ym.getAutocompleteItemsAsync(searchQueryV));
-                    console.log(`CODE00000000 FINISHED ASYNC QUERY ${searchQueryV}`);
+                    console.log(`CODE00000010 FINISHED ASYNC QUERY ${searchQueryV}`);
                     setSearchTimeoutHandle(0 as any);
                 } catch (e) {
-                    console.error(`CODE00000000 Failed to load ValueLink values`, e);
+                    console.error(`CODE00000011 Failed to load ValueLink values`, e);
                 }
             }, searchTimeout || 1000)
         );
