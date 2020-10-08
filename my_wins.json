@@ -1,0 +1,32 @@
+{
+    "x": 0,
+    "wins": {
+        "webstorm": {
+            "cmd": "\"C:\\Program Files\\JetBrains\\WebStorm 2019.2.4\\bin\\webstorm64.exe\"",
+            "app": true,
+            "no_run": false
+        },
+        "watch": {
+            "cmd": "cls && ycplmon && watch",
+            "no_run": false
+        },
+        "web_dev": {
+            "cmd": "cls && ycplmon && web_dev",
+            "no_run": false
+        },
+        "ycplmon": {
+            "cmd": "cls && ycplmon",
+            "no_run": true
+        },
+        "node": {
+            "cmd": "node",
+            "no_run": true
+        }
+    },
+    "disabled": {
+        "tsc": {
+            "cmd": "cls && ycplmon && tsc --watch",
+            "no_run": true
+        }
+    }
+}

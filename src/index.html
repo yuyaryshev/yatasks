@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            .unsupported_message_elem {
+                animation: 1s fadeIn;
+                animation-fill-mode: forwards;
+
+                visibility: hidden;
+            }
+
+            .unsupported_message_elem:hover {
+                background-color: #123;
+            }
+
+            @keyframes fadeIn {
+                99% {
+                    visibility: hidden;
+                }
+                100% {
+                    visibility: visible;
+                }
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <title>Ysurvey - система проведения опросов</title>
+    </head>
+    <body>
+        <div class="unsupported_message_elem2" id="unsupported_message">
+            <h2>Этот сайт не совместим с браузером Internet Explorer.</h2>
+            <p>
+                Откройте, пожалуйста, его в любом другом бразере: Firefox, Chrome, Yandex,... Также сайт требует
+                включенного Javascript.
+            </p>
+
+            <h2>This site is incompartible with Internet Explorer.</h2>
+            <p>
+                Please open it with any other browser: Firefox, Chrome, Yandex,... Также сайт требует включенного
+                Javascript.
+            </p>
+        </div>
+    </body>
+</html>
