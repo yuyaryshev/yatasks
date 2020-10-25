@@ -1,5 +1,6 @@
 import { Editable, EditableOpts, getEditableMeta } from "./ymeta";
 import { addEdited } from "./edited";
+import {action} from "mobx";
 
 export interface ActionFuncs {
     setter?: (v: any) => void;
@@ -28,10 +29,10 @@ export function setter(target: any, prop: string, value?: any) {
         if (!constSetter)
             constSetters.set(
                 value,
-                (constSetter = function constSetterFunc() {
+                (constSetter = action(function constSetterFunc() {
                     target[prop] = value;
                     addEdited(target, prop);
-                })
+                }))
             );
         return constSetter;
     }
@@ -63,10 +64,10 @@ export function clearer(target: any, prop: string) {
     const dictProp = dict[prop] || (dict[prop] = {});
     return (
         dictProp.clearer ||
-        (dictProp.clearer = function clearerFunc() {
+        (dictProp.clearer = action(function clearerFunc() {
             target[prop] = ym.defaultValue;
             addEdited(target, prop);
-        })
+        }))
     );
 }
 
@@ -79,10 +80,10 @@ export function toggler(target: any, prop: string) {
     const dictProp = dict[prop] || (dict[prop] = {});
     return (
         dictProp.toggler ||
-        (dictProp.toggler = function togglerFunc() {
+        (dictProp.toggler = action(function togglerFunc() {
             target[prop] = !target[prop];
             addEdited(target, prop);
-        })
+        }))
     );
 }
 
@@ -106,18 +107,18 @@ export function changer(target: any, prop: string, changer: ChangerFunc, ...chan
     if (!changerArgs.length)
         return (
             (dictProp as any)[changerName] ||
-            ((dictProp as any)[changerName] = function changerFunc(eventOrValue: any) {
+            ((dictProp as any)[changerName] = action(function changerFunc(eventOrValue: any) {
                 changer(target, prop, eventOrValue, ym);
                 addEdited(target, prop);
-            })
+            }))
         );
 
     const changerFullName = changerName + changerArgs.join("_");
     return (
         (dictProp as any)[changerFullName] ||
-        ((dictProp as any)[changerFullName] = function changerFunc(eventOrValue: any) {
+        ((dictProp as any)[changerFullName] = action(function changerFunc(eventOrValue: any) {
             changer(target, prop, eventOrValue, ym, ...changerArgs);
             addEdited(target, prop);
-        })
+        }))
     );
 }

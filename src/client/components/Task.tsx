@@ -7,7 +7,7 @@ import Paper from "@material-ui/core/Paper";
 import debugjs from "debug";
 import { ytheme } from "./ytheme";
 import { TaskModel } from "../models/TaskModel";
-import { Value } from "./Value";
+import { Editor } from "./Editor";
 
 const debugRender = debugjs("render");
 
@@ -44,7 +44,7 @@ export const Task: React.FC<{ m: TaskModel }> = ({ m }) => {
         return (
             // GRP_task_fields
             <Paper className={classes.task} square>
-                <Value m={m} prop="isFinished" />
+                <Editor object={m} property="isFinished" />
                 {m.description ? (
                     <>
                         <Typography>

@@ -19,25 +19,25 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-export const ValueString: React.FC<{
-    m: any;
-    prop: string;
+export const TextEditor: React.FC<{
+    object: any;
+    property: string;
     disabled?: boolean;
-}> = ({ m, prop, disabled, ...otherProps }) => {
+}> = ({ object, property, disabled, ...otherProps }) => {
     return useObserver(() => {
         debugRender("ValueString");
-        if (prop === "name" && m instanceof TaskModel) {
-            console.log(`CODE00000125 Rendering TaskModel.${prop}`);
+        if (property === "name" && object instanceof TaskModel) {
+            console.log(`CODE00000125 Rendering TaskModel.${property}`);
         }
 
         const classes = useStyles();
         return (
             <>
-                <InputLabel>{prop}</InputLabel>
+                <InputLabel>{property}</InputLabel>
                 <Input
                     className={classes.textField}
-                    value={m[prop]}
-                    onChange={setter(m, prop)}
+                    value={object[property]}
+                    onChange={setter(object, property)}
                     disabled={disabled}
                     {...otherProps}
                 />

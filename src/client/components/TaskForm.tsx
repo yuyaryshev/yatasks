@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useObserver } from "mobx-react-lite";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -7,8 +7,10 @@ import FormGroup from "@material-ui/core/FormGroup";
 
 import debugjs from "debug";
 import { TaskModel } from "../models/TaskModel";
-import { Value } from "./Value";
+import { Editor } from "./Editor";
 import { ErrorBoundary } from "./ErrorBoundary";
+import { changer, setter } from "../models/editFunctions";
+import { dateChanger } from "./Editor/DateEditor";
 
 const debugRender = debugjs("render");
 
@@ -40,38 +42,38 @@ export const TaskForm: React.FC<{ m: TaskModel }> = ({ m }) => {
                 // GRP_task_fields
                 <Typography>id={m.id}</Typography>
                 <Typography>uid={m.uid}</Typography>
-                <Value m={m} prop="name" editor />
-                <Value m={m} prop="description" editor />
-                <Value m={m} prop="reviewDate" editor />
-                <Value m={m} prop="parent" editor />
-                <Value m={m} prop="result" editor />
-                <Value m={m} prop="assignee" editor />
-                <Value m={m} prop="reporter" editor />
+                <Typography>name={m.name}</Typography>
+                <Editor object={m} property="name" editor />
+                <Editor object={m} property="description" editor />
+                <Editor object={m} property="parent" editor />
+                <Editor object={m} property="result" editor />
+                <Editor object={m} property="assignee" editor />
+                <Editor object={m} property="reporter" editor />
                 <FormGroup className={classes.flags}>
-                    <Value m={m} prop="isAcceptedByAssignee" editor />
-                    <Value m={m} prop="isInProgress" editor />
-                    <Value m={m} prop="isFinished" editor />
-                    <Value m={m} prop="isWaiting" editor />
-                    <Value m={m} prop="isAcceptedByManager" editor />
-                    <Value m={m} prop="isAcceptedByReporter" editor />
-                    <Value m={m} prop="isSucceded" editor />
+                    <Editor object={m} property="isAcceptedByAssignee" editor />
+                    <Editor object={m} property="isInProgress" editor />
+                    <Editor object={m} property="isFinished" editor />
+                    <Editor object={m} property="isWaiting" editor />
+                    <Editor object={m} property="isAcceptedByManager" editor />
+                    <Editor object={m} property="isAcceptedByReporter" editor />
+                    <Editor object={m} property="isSucceded" editor />
                 </FormGroup>
                 <FormGroup className={classes.flags}>
-                    <Value m={m} prop="createdDate" editor />
-                    <Value m={m} prop="startDate" editor />
-                    <Value m={m} prop="endDate" editor />
-                    <Value m={m} prop="dueDate" editor />
-                    <Value m={m} prop="expectedStartDate" editor />
-                    <Value m={m} prop="expectedEndDate" editor />
+                    <Editor object={m} property="createdDate" editor />
+                    <Editor object={m} property="startDate" editor />
+                    <Editor object={m} property="endDate" editor />
+                    <Editor object={m} property="dueDate" editor />
+                    <Editor object={m} property="expectedStartDate" editor />
+                    <Editor object={m} property="expectedEndDate" editor />
                 </FormGroup>
-                <Value m={m} prop="labels" editor />
-                <Value m={m} prop="workDaysDuration" editor />
-                <Value m={m} prop="calendarDaysDuration" editor />
-                <Value m={m} prop="remainingEstimate" editor />
-                <Value m={m} prop="epicLink" editor />
-                <Value m={m} prop="jiraKey" editor />
-                <Value m={m} prop="waitType" editor />
-                <Value m={m} prop="waitDate" editor />
+                <Editor object={m} property="labels" editor />
+                <Editor object={m} property="workDaysDuration" editor />
+                <Editor object={m} property="calendarDaysDuration" editor />
+                <Editor object={m} property="remainingEstimate" editor />
+                <Editor object={m} property="epicLink" editor />
+                <Editor object={m} property="jiraKey" editor />
+                <Editor object={m} property="waitType" editor />
+                <Editor object={m} property="waitDate" editor />
                 {/*<Button*/}
                 {/*    className={classes.surveyFinishButton}*/}
                 {/*    variant="contained"*/}

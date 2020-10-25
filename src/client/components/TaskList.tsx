@@ -83,7 +83,7 @@ export const TaskList: React.FC<{ m: TaskListModel; selectorObj?: any; selectorP
                                 {/*<InboxIcon />*/}
                             </ListItemIcon>
                             <ListItemText primary={item.name} />
-                            {/*<Value m={m.isFinished} />*/}
+                            {/*<Editor m={m.isFinished} />*/}
                             {/*{m.description ? (*/}
                             {/*    <>*/}
                             {/*        <Typography>*/}

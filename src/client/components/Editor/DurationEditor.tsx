@@ -49,32 +49,32 @@ export function durationChanger(
     target[prop] = avv.toISO();
 }
 
-export const ValueDuration: React.FC<{
-    m: any;
-    prop: string;
+export const DurationEditor: React.FC<{
+    object: any;
+    property: string;
     disabled?: boolean;
-}> = ({ m, prop, disabled, ...otherProps }) => {
+}> = ({ object, property, disabled, ...otherProps }) => {
     return useObserver(() => {
         debugRender("ValueDuration");
         const [sign, setSign] = useState("+");
         const classes = useStyles();
         return (
             <>
-                <InputLabel>{prop}</InputLabel>
+                <InputLabel>{property}</InputLabel>
                 <Input
                     className={classes.textField}
-                    value={m[prop] ? durationObjToEngStr(Duration.fromISO(m[prop])) : ""}
-                    onChange={setter(m, prop)}
+                    value={object[property] ? durationObjToEngStr(Duration.fromISO(object[property])) : ""}
+                    onChange={setter(object, property)}
                     disabled={disabled}
                     endAdornment={
                         <InputAdornment position="end">
-                            <IconButton onClick={changer(m, prop, durationChanger, sign, 5, "minutes")}>
+                            <IconButton onClick={changer(object, property, durationChanger, sign, 5, "minutes")}>
                                 <Avatar className={classes.avatar}>{sign}5m</Avatar>
                             </IconButton>
-                            <IconButton onClick={changer(m, prop, durationChanger, sign, 1, "hours")}>
+                            <IconButton onClick={changer(object, property, durationChanger, sign, 1, "hours")}>
                                 <Avatar className={classes.avatar}>{sign}1h</Avatar>
                             </IconButton>
-                            <IconButton onClick={changer(m, prop, durationChanger, sign, 1, "days")}>
+                            <IconButton onClick={changer(object, property, durationChanger, sign, 1, "days")}>
                                 <Avatar className={classes.avatar}>{sign}1d</Avatar>
                             </IconButton>
                         </InputAdornment>

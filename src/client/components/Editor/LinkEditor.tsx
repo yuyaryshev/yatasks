@@ -20,13 +20,13 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-export const ValueLink: React.FC<{
-    m: any;
-    prop: string;
+export const LinkEditor: React.FC<{
+    object: any;
+    property: string;
     disabled?: boolean;
     searchTimeout?: number;
-}> = ({ m, prop, disabled, searchTimeout, ...otherProps }) => {
-    const ym = getEditableMeta(m, prop);
+}> = ({ object, property, disabled, searchTimeout, ...otherProps }) => {
+    const ym = getEditableMeta(object, property);
     const [searchTimeoutHandle, setSearchTimeoutHandle] = useState(0 as any);
     // const [searchQuery, setSearchQuery] = useState("");
     const [asyncAutocompleteItems, setAsyncAutocompleteItems] = useState([] as any[]);
@@ -53,8 +53,8 @@ export const ValueLink: React.FC<{
     const loading = !!(searchTimeoutHandle && ym && ym.et === "link" && ym.getAutocompleteItemsAsync);
 
     return useObserver(() => {
-        debugRender("ValueLink");
-        const ym = getEditableMeta(m, prop);
+        debugRender("LinkEditor");
+        const ym = getEditableMeta(object, property);
         if (!ym || ym.et !== "link")
             return <div>CODE00000123 Unsupported ym.et='{(ym as any).et || "undefined"}'!</div>;
 
@@ -68,15 +68,15 @@ export const ValueLink: React.FC<{
                 size="small"
                 options={allAutocompleteItems}
                 getOptionLabel={ym.getTitle}
-                value={m[prop]}
+                value={object[property]}
                 onInputChange={onSearchQueryChanged}
-                onChange={setter(m, prop)}
+                onChange={setter(object, property)}
                 renderInput={(params) => (
                     <TextField
                         {...params}
                         variant="standard"
                         className={classes.textField}
-                        label={prop}
+                        label={property}
                         disabled={disabled}
                         {...otherProps}
                         InputProps={{

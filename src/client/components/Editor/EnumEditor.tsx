@@ -19,33 +19,31 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-export const ValueLabels: React.FC<{
-    m: any;
-    prop: string;
+export const EnumEditor: React.FC<{
+    object: any;
+    property: string;
     disabled?: boolean;
-}> = ({ m, prop, disabled, ...otherProps }) => {
+}> = ({ object, property, disabled, ...otherProps }) => {
     return useObserver(() => {
-        debugRender("ValueLabels");
-        const ym = getEditableMeta(m, prop);
-        if (!ym || ym.et !== "labels")
-            return <div>CODE00000122 Unsupported ym.et='{(ym as any).et || "undefined"}'!</div>;
+        debugRender("EnumEditor");
+        const ym = getEditableMeta(object, property);
+        if (!ym || ym.et !== "enum")
+            return <div>CODE00000121 Unsupported ym.et='{(ym as any).et || "undefined"}'!</div>;
 
         const classes = useStyles();
         return (
             <Autocomplete
-                multiple
-                id="size-small-standard-multi"
-                size="small"
-                options={ym.getAutocompleteItemsSync()}
-                getOptionLabel={(option) => option}
-                value={m[prop]}
-                onChange={setter(m, prop)}
+                id="combo-box-demo"
+                options={ym.values}
+                getOptionLabel={(option: string) => option}
+                style={{ width: 300 }}
                 renderInput={(params) => (
                     <TextField
                         {...params}
-                        variant="standard"
                         className={classes.textField}
-                        label={prop}
+                        label={property}
+                        value={object[property]}
+                        onChange={setter(object, property)}
                         disabled={disabled}
                         {...otherProps}
                     />

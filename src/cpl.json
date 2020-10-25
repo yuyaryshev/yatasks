@@ -10,6 +10,121 @@
   "pos": 538
  },
  {
+  "cpl": 119,
+  "filePath": "src\\client\\components\\Editor\\DateEditor.tsx",
+  "pos": 3210
+ },
+ {
+  "cpl": 120,
+  "filePath": "src\\client\\components\\Editor\\DurationEditor.tsx",
+  "pos": 3361
+ },
+ {
+  "cpl": 121,
+  "filePath": "src\\client\\components\\Editor\\EnumEditor.tsx",
+  "pos": 1814
+ },
+ {
+  "cpl": 116,
+  "filePath": "src\\client\\components\\Editor\\index.tsx",
+  "pos": 962
+ },
+ {
+  "cpl": 117,
+  "filePath": "src\\client\\components\\Editor\\index.tsx",
+  "pos": 1983
+ },
+ {
+  "cpl": 118,
+  "filePath": "src\\client\\components\\Editor\\index.tsx",
+  "pos": 2136
+ },
+ {
+  "cpl": 122,
+  "filePath": "src\\client\\components\\Editor\\LabelsEditor.tsx",
+  "pos": 1885
+ },
+ {
+  "cpl": 9,
+  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
+  "pos": 1825
+ },
+ {
+  "cpl": 10,
+  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
+  "pos": 1993
+ },
+ {
+  "cpl": 11,
+  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
+  "pos": 2399
+ },
+ {
+  "cpl": 123,
+  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
+  "pos": 3962
+ },
+ {
+  "cpl": 12,
+  "filePath": "src\\client\\components\\Editor\\MultiLinkEditor.tsx",
+  "pos": 2022
+ },
+ {
+  "cpl": 124,
+  "filePath": "src\\client\\components\\Editor\\MultiLinkEditor.tsx",
+  "pos": 3407
+ },
+ {
+  "cpl": 125,
+  "filePath": "src\\client\\components\\Editor\\TextEditor.tsx",
+  "pos": 1463
+ },
+ {
+  "cpl": 126,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 4476
+ },
+ {
+  "cpl": 127,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 5043
+ },
+ {
+  "cpl": 128,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 5608
+ },
+ {
+  "cpl": 129,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 6145
+ },
+ {
+  "cpl": 130,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 6667
+ },
+ {
+  "cpl": 1,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 7190
+ },
+ {
+  "cpl": 2,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 7812
+ },
+ {
+  "cpl": 3,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 18299
+ },
+ {
+  "cpl": 4,
+  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
+  "pos": 18495
+ },
+ {
   "cpl": 114,
   "filePath": "src\\client\\components\\MessageBox.tsx",
   "pos": 4857
@@ -17,122 +132,7 @@
  {
   "cpl": 115,
   "filePath": "src\\client\\components\\TaskList.tsx",
-  "pos": 3723
- },
- {
-  "cpl": 116,
-  "filePath": "src\\client\\components\\Value\\index.tsx",
-  "pos": 917
- },
- {
-  "cpl": 117,
-  "filePath": "src\\client\\components\\Value\\index.tsx",
-  "pos": 1844
- },
- {
-  "cpl": 118,
-  "filePath": "src\\client\\components\\Value\\index.tsx",
-  "pos": 1997
- },
- {
-  "cpl": 119,
-  "filePath": "src\\client\\components\\Value\\ValueDate.tsx",
-  "pos": 3141
- },
- {
-  "cpl": 120,
-  "filePath": "src\\client\\components\\Value\\ValueDuration.tsx",
-  "pos": 3284
- },
- {
-  "cpl": 121,
-  "filePath": "src\\client\\components\\Value\\ValueEnum.tsx",
-  "pos": 1763
- },
- {
-  "cpl": 122,
-  "filePath": "src\\client\\components\\Value\\ValueLabels.tsx",
-  "pos": 1834
- },
- {
-  "cpl": 9,
-  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
-  "pos": 1797
- },
- {
-  "cpl": 10,
-  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
-  "pos": 1965
- },
- {
-  "cpl": 11,
-  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
-  "pos": 2361
- },
- {
-  "cpl": 123,
-  "filePath": "src\\client\\components\\Value\\ValueLink.tsx",
-  "pos": 3902
- },
- {
-  "cpl": 12,
-  "filePath": "src\\client\\components\\Value\\ValueMultiLink.tsx",
-  "pos": 1984
- },
- {
-  "cpl": 124,
-  "filePath": "src\\client\\components\\Value\\ValueMultiLink.tsx",
-  "pos": 3347
- },
- {
-  "cpl": 125,
-  "filePath": "src\\client\\components\\Value\\ValueString.tsx",
-  "pos": 1411
- },
- {
-  "cpl": 126,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 4476
- },
- {
-  "cpl": 127,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 5043
- },
- {
-  "cpl": 128,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 5608
- },
- {
-  "cpl": 129,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 6145
- },
- {
-  "cpl": 130,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 6667
- },
- {
-  "cpl": 1,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 7190
- },
- {
-  "cpl": 2,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 7812
- },
- {
-  "cpl": 3,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 18299
- },
- {
-  "cpl": 4,
-  "filePath": "src\\client\\components\\Value\\zzz_Value_BAK_OLD.jsx",
-  "pos": 18495
+  "pos": 3724
  },
  {
   "cpl": 208,
@@ -152,42 +152,42 @@
  {
   "cpl": 5,
   "filePath": "src\\client\\models\\editFunctions.ts",
-  "pos": 1675
+  "pos": 1712
  },
  {
   "cpl": 6,
   "filePath": "src\\client\\models\\editFunctions.ts",
-  "pos": 1908
+  "pos": 1945
  },
  {
   "cpl": 304,
   "filePath": "src\\client\\models\\editFunctions.ts",
-  "pos": 2433
+  "pos": 2478
  },
  {
   "cpl": 305,
   "filePath": "src\\client\\models\\editFunctions.ts",
-  "pos": 3149
+  "pos": 3202
  },
  {
   "cpl": 306,
   "filePath": "src\\client\\models\\editFunctions.ts",
-  "pos": 3287
+  "pos": 3340
  },
  {
   "cpl": 113,
   "filePath": "src\\client\\models\\editFunctions.ts",
-  "pos": 4144
+  "pos": 4213
  },
  {
   "cpl": 190,
   "filePath": "src\\client\\models\\MainModel.ts",
-  "pos": 1321
+  "pos": 1331
  },
  {
   "cpl": 14,
   "filePath": "src\\client\\models\\MainModel.ts",
-  "pos": 3948
+  "pos": 4004
  },
  {
   "cpl": 309,
@@ -212,32 +212,32 @@
  {
   "cpl": 303,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 5487
+  "pos": 5559
  },
  {
   "cpl": 289,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 5604
+  "pos": 5676
  },
  {
   "cpl": 290,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 5650
+  "pos": 5722
  },
  {
   "cpl": 203,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 6263
+  "pos": 6335
  },
  {
   "cpl": 13,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 6833
+  "pos": 6905
  },
  {
   "cpl": 200,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 7186
+  "pos": 7258
  },
  {
   "cpl": 297,

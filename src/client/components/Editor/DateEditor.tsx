@@ -47,22 +47,22 @@ export function dateChanger(
     target[prop] = avv.toISO();
 }
 
-export const ValueDate: React.FC<{
-    m: any;
-    prop: string;
+export const DateEditor: React.FC<{
+    object: any;
+    property: string;
     disabled?: boolean;
-}> = ({ m, prop, disabled, ...otherProps }) => {
+}> = ({ object, property, disabled, ...otherProps }) => {
     return useObserver(() => {
-        debugRender("ValueDate");
+        debugRender("DateEditor");
         const [sign, setSign] = useState("+");
         const classes = useStyles();
         return (
             <div>
                 <KeyboardDateTimePicker
-                    label={prop}
+                    label={property}
                     //                            value={DateTime.fromISO("2010-01-01")}
-                    value={m[prop] || null}
-                    onChange={setter(m, prop)}
+                    value={object[property] || null}
+                    onChange={setter(object, property)}
                     onError={console.log}
                     ampm={false}
                     //                            format="yyyy-MM-dd HH:mm"
@@ -72,13 +72,13 @@ export const ValueDate: React.FC<{
                     disabled={disabled}
                     {...otherProps}
                 />
-                <IconButton onClick={changer(m, prop, dateChanger, sign, 5, "minutes")}>
+                <IconButton onClick={changer(object, property, dateChanger, sign, 5, "minutes")}>
                     <Avatar className={classes.avatar}>{sign}5m</Avatar>
                 </IconButton>
-                <IconButton onClick={changer(m, prop, dateChanger, sign, 1, "hours")}>
+                <IconButton onClick={changer(object, property, dateChanger, sign, 1, "hours")}>
                     <Avatar className={classes.avatar}>{sign}1h</Avatar>
                 </IconButton>
-                <IconButton onClick={changer(m, prop, dateChanger, sign, 1, "days")}>
+                <IconButton onClick={changer(object, property, dateChanger, sign, 1, "days")}>
                     <Avatar className={classes.avatar}>{sign}1d</Avatar>
                 </IconButton>
             </div>

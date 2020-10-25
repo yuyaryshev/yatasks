@@ -20,12 +20,12 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-export const ValueMultiLink: React.FC<{
-    m: any;
-    prop: string;
+export const MultiLinkEditor: React.FC<{
+    object: any;
+    property: string;
     disabled?: boolean;
     searchTimeout?: number;
-}> = ({ m, prop, disabled, searchTimeout, ...otherProps }) => {
+}> = ({ object, property, disabled, searchTimeout, ...otherProps }) => {
     const [searchTimeoutHandle, setSearchTimeoutHandle] = useState(0 as any);
     const [searchQuery, setSearchQuery] = useState("");
     const [asyncAutocompleteItems, setAsyncAutocompleteItems] = useState([] as any[]);
@@ -36,7 +36,7 @@ export const ValueMultiLink: React.FC<{
         setSearchTimeoutHandle(
             setTimeout(async function executeSearchQuery() {
                 try {
-                    const ym = getEditableMeta(m, prop);
+                    const ym = getEditableMeta(object, property);
                     if (ym && ym.et === "link" && ym.getAutocompleteItemsAsync)
                         setAsyncAutocompleteItems(await ym.getAutocompleteItemsAsync(searchQuery));
                 } catch (e) {
@@ -47,8 +47,8 @@ export const ValueMultiLink: React.FC<{
     }
 
     return useObserver(() => {
-        debugRender("ValueMultiLink");
-        const ym = getEditableMeta(m, prop);
+        debugRender("MultiLinkEditor");
+        const ym = getEditableMeta(object, property);
         if (!ym || ym.et !== "multilink")
             return <div>CODE00000124 Unsupported ym.et='{(ym as any).et || "undefined"}'!</div>;
 
@@ -64,14 +64,14 @@ export const ValueMultiLink: React.FC<{
                 options={allAutocompleteItems}
                 onInputChange={onSearchQueryChanged}
                 getOptionLabel={ym.getTitle}
-                value={m[prop]}
-                onChange={setter(m, prop)}
+                value={object[property]}
+                onChange={setter(object, property)}
                 renderInput={(params) => (
                     <TextField
                         {...params}
                         variant="standard"
                         className={classes.textField}
-                        label={prop}
+                        label={property}
                         disabled={disabled}
                         {...otherProps}
                     />

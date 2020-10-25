@@ -19,26 +19,26 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-export const ValueBoolean: React.FC<{
-    m: any;
-    prop: string;
+export const BooleanEditor: React.FC<{
+    object: any;
+    property: string;
     disabled?: boolean;
-}> = ({ m, prop, disabled, ...otherProps }) => {
+}> = ({ object, property, disabled, ...otherProps }) => {
     return useObserver(() => {
-        debugRender("ValueBoolean");
+        debugRender("BooleanEditor");
         const classes = useStyles();
         return (
             <FormControlLabel
                 control={
                     <Checkbox
                         className={classes.textField}
-                        checked={!!m[prop]}
-                        onChange={toggler(m, prop)}
+                        checked={!!object[property]}
+                        onChange={toggler(object, property)}
                         disabled={disabled}
                         {...otherProps}
                     />
                 }
-                label={prop}
+                label={property}
             />
         );
     });
