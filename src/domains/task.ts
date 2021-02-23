@@ -54,6 +54,7 @@ export const taskTable: Table = {
         { name: "jiraKey", type: "text" },
         { name: "waitType", type: "text" },
         { name: "waitDate", type: "text" },
+        { name: "testlink", type: "text" },
     ],
 };
 
@@ -92,6 +93,7 @@ export interface SerializedTask {
     jiraKey: string | undefined;
     waitType: string | undefined;
     waitDate: string | undefined;
+    testlink: string | undefined;
 }
 export const decoderSerializedTask: Decoder<SerializedTask> = object({
     // GRP_task_fields
@@ -128,6 +130,7 @@ export const decoderSerializedTask: Decoder<SerializedTask> = object({
     jiraKey: optional(string()),
     waitType: optional(string()),
     waitDate: optional(string()),
+    testlink: optional(string()),
 });
 
 export interface PartialSerializedTask {
@@ -165,6 +168,7 @@ export interface PartialSerializedTask {
     jiraKey: string | undefined;
     waitType: string | undefined;
     waitDate: string | undefined;
+    testlink: string | undefined;
 }
 export const decoderPartialSerializedTask: Decoder<PartialSerializedTask> = object({
     // GRP_task_fields
@@ -201,6 +205,7 @@ export const decoderPartialSerializedTask: Decoder<PartialSerializedTask> = obje
     jiraKey: optional(string()),
     waitType: optional(string()),
     waitDate: optional(string()),
+    testlink: optional(string()),
 });
 
 export function rowToSerializedTask(r: any): SerializedTask {

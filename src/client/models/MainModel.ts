@@ -8,7 +8,7 @@ import { getEditableMeta, ymeta } from "./ymeta";
 import { PersonModel } from "./PersonModel";
 import { apiUrl } from "./myUrl";
 import axios from "axios";
-import { decoderCurrentTasksApiResponse, SearchTaskApiRequest } from "../../api";
+import { decoderSearchApiRequest, decoderSearchApiResponse, SearchTaskApiRequest } from "../../api";
 import { hasEdited, withDisabledAddEdited } from "./edited";
 import { syncArray } from "./common";
 
@@ -21,8 +21,8 @@ export const TaskModelLinkOpts = {
     getAutocompleteItemsSync: () => mainModel.tasks.items,
     getAutocompleteItemsAsync: async (q: string) => {
         try {
-            const resp0 = await axios.get(apiUrl() + "/api/search", { params: { q } as SearchTaskApiRequest });
-            const { tasks } = decoderCurrentTasksApiResponse.runWithException(resp0?.data);
+            const resp0 = await axios.get(apiUrl() + "/api/search", { params: decoderSearchApiRequest.runWithException({ q }) });
+            const { tasks } = decoderSearchApiResponse.runWithException(resp0?.data);
             return tasks;
         } catch (e) {
             console.error(`CODE00000014 ERROR in refreshCurrentTasks ${e.message}`);

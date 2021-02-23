@@ -58,6 +58,7 @@ export class TaskModel implements Editable {
     @ymeta({ et: "string" }) jiraKey: string = "";
     @ymeta({ et: "enum", values: WaitTypeValues, defaultValue: "time" }) waitType: WaitType = "time";
     @ymeta({ et: "date" }) waitDate: DateTime | undefined;
+    @ymeta({ et: "link", ...TaskModelLinkOpts }) testlink: TaskModel | undefined;
 
     constructor() {
         const pthis = this;
@@ -113,6 +114,7 @@ export async function saveTasks(tasks: TaskModel[] | undefined) {
             jiraKey: t.jiraKey,
             waitType: t.waitType,
             waitDate: optionalDateToString(t.waitDate),
+            testlink: t.testlink?.uid,
         };
         serializedTasks.push(serializedTask);
         console.log(`CODE00000303 Saving task summary=${t.name}, id=${t.id}, uid=${t.uid}`);

@@ -108,6 +108,7 @@ export class TaskServerModel {
         if (!newTask.reporter) newTask.reporter = undefined;
         if (!newTask.parent) newTask.parent = undefined;
         if (!newTask.result) newTask.result = undefined;
+        if (!newTask.testlink) newTask.testlink = undefined;
         newTask.labels = (newTask.labels || []).join(" ") as any;
         this.saveTask(newTask as any);
     }
