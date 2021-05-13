@@ -2,7 +2,7 @@ import { YSemaphore, ysemaphore } from "../Ystd/ymutex";
 import JiraClient from "jira-connector";
 
 import { Decoder, number, object } from "@mojotech/json-type-validation";
-import { dateDiff, shortSelfOrsha256base64 } from "Ystd";
+import { dateDiff, shortSelfOrsha256base64 } from "ystd";
 import sortKeys from "sort-keys";
 
 export interface IssueContextInput {

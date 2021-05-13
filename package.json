@@ -1,5 +1,5 @@
 {
-    "name": "ysurvey",
+    "name": "yatasks",
     "version": "1.0.0",
     "private": true,
     "description": "Load issues from Jira and post them to Oracle DB",

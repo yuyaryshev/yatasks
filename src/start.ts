@@ -1,5 +1,5 @@
 // import block
-import { debugMsgFactory, globalHandler } from "Ystd";
+import { debugMsgFactory, globalHandler } from "ystd";
 import { startEnv } from "./server/startApiServer";
 
 // currently unused

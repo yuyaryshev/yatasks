@@ -1,7 +1,7 @@
 import better_sqlite3 from "better-sqlite3";
 
 import { jiraClean, JiraRequest, JiraRequestHandler, JiraStubInterface } from "./JiraWrapper";
-import { awaitDelay, EnvWithTimers, manageableTimer, writeFileSyncIfChanged, ymutex } from "Ystd";
+import { awaitDelay, EnvWithTimers, manageableTimer, writeFileSyncIfChanged, ymutex } from "ystd";
 import { stringify } from "javascript-stringify";
 import { BatchWriter, batchWriter } from "./batchWriter";
 

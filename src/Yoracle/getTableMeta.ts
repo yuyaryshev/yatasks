@@ -1,5 +1,5 @@
 import { OracleConnection0 } from "./OracleConnection0";
-import { fjmap, mergeConditions, strNvlT } from "Ystd";
+import { fjmap, mergeConditions, strNvlT } from "ystd";
 
 export interface GetTableMetaOpts {
     schemas?: string[];

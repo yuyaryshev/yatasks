@@ -1,5 +1,5 @@
 import { Database, Statement } from "better-sqlite3";
-import { awaitDelay, EnvWithTimers, makePromiseVoid, manageableTimer } from "Ystd";
+import { awaitDelay, EnvWithTimers, makePromiseVoid, manageableTimer } from "ystd";
 
 export interface BatchWriter<T extends unknown[] = unknown[]> {
     batchSize: number;
