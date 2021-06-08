@@ -11,7 +11,7 @@ let DEV_SETTINGS = {};
 try {
     DEV_SETTINGS = require("./DEV_SETTINGS.cjs");
 } catch (e) {
-    //    console.trace(`DEV_SETTINGS not loaded`, e.stack);
+//    console.trace(`DEV_SETTINGS not loaded`, e.stack);
 }
 const { DEV_BYPASS_AUTH } = DEV_SETTINGS;
 
@@ -25,7 +25,10 @@ module.exports = {
             },
         ],
         "@babel/transform-typescript",
-        ["@babel/plugin-proposal-decorators", { legacy: true }],
+        [
+            "@babel/plugin-proposal-decorators",
+            { legacy: true },
+        ],
         "@babel/proposal-optional-chaining",
         "@babel/proposal-class-properties",
         "@babel/proposal-object-rest-spread",

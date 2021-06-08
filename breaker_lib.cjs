@@ -34,7 +34,7 @@ const BREAKER = BREAKER_Lib(__filename);
 TODO при этом нужно сохранить глобальность самого BREAKER'а
 
 */
-const fs = require("fs");
+const fs = require('fs');
 
 function getTrace(n = 0) {
     return (new Error("BREAKER_STACK").stack + "")
@@ -114,8 +114,8 @@ const createBreaker = breaker_map[""];
 
 global.BREAKER = Object.assign(createBreaker, createBreaker());
 global.BREAKER.bufferToFile = global.bufferToFile = function bufferToFile(filename, buffer) {
-    fs.writeFileSync(filename, buffer, "binary");
-};
+    fs.writeFileSync(filename, buffer, 'binary');
+}
 
 //===== TEMP_DEBUG_CODE ================================================================================================
 // const BufferList = require('bl');
@@ -126,31 +126,31 @@ global.BREAKER.buffer_dump = function buffer_dump(callerFilename, chunk, mode, o
     return;
     const maxCheckLength = 200000;
 
-    if (!mode) mode = "empty";
+    if(!mode)
+        mode = "empty";
 
-    if (!dbgBufferLists[mode]) dbgBufferLists[mode] = Buffer.alloc(0);
+    if(!dbgBufferLists[mode]) dbgBufferLists[mode] = Buffer.alloc(0);
 
-    if (dbgBufferLists[mode].length > (mode === "source" ? 2 : 1) * maxCheckLength) return;
+    if(dbgBufferLists[mode].length > (mode === "source"? 2: 1)* maxCheckLength)
+        return;
 
-    if (offset === undefined) dbgBufferLists[mode] = Buffer.concat([dbgBufferLists[mode], chunk]);
+
+    if(offset === undefined)
+        dbgBufferLists[mode] = Buffer.concat([dbgBufferLists[mode], chunk]);
     else {
         offset = Number(offset);
-        dbgBufferLists[mode] = Buffer.concat([
-            dbgBufferLists[mode].slice(0, offset),
-            chunk,
-            dbgBufferLists[mode].slice(offset + chunk.length),
-        ]);
+        dbgBufferLists[mode] = Buffer.concat([dbgBufferLists[mode].slice(0,offset), chunk, dbgBufferLists[mode].slice(offset+chunk.length)]);
     }
 
-    if (mode !== "source" && dbgBufferLists["source"]) {
+    if(mode !== "source" && dbgBufferLists["source"]) {
         const myBuf = dbgBufferLists[mode];
         const sourceBuf = dbgBufferLists["source"].slice(0, myBuf.length);
 
-        if (Buffer.compare(myBuf, sourceBuf) !== 0) {
+        if(Buffer.compare(myBuf, sourceBuf) !== 0) {
             const n = myBuf.length;
-            for (let i = 0; i < n; i++)
-                if (myBuf[i] !== sourceBuf[i]) {
-                    if (!writtenOnce) {
+            for(let i=0; i<n; i++)
+                if(myBuf[i] !== sourceBuf[i]) {
+                    if(!writtenOnce) {
                         writtenOnce = true;
                         BREAKER.bufferToFile(`d:\\temp\\sourceBuf.txt`, dbgBufferLists["source"]);
                         BREAKER.bufferToFile(`d:\\temp\\myByf.txt`, myBuf);
@@ -161,34 +161,35 @@ global.BREAKER.buffer_dump = function buffer_dump(callerFilename, chunk, mode, o
     }
 
     return;
-    let isFirstWriter = process.argv.join(" ").includes("mocha");
-    const fn = "d:\\BREAKER_buffer_dump.txt";
+        let isFirstWriter = process.argv.join(" ").includes("mocha");
+        const fn = "d:\\BREAKER_buffer_dump.txt";
 
-    debugger;
-    return;
+        debugger;
+        return;
 
-    if (!pthis.dumped) {
-        if (!pthis.bl) pthis.bl = new BufferList();
-        pthis.bl.append(chunk);
+        if (!pthis.dumped) {
+            if (!pthis.bl) pthis.bl = new BufferList();
+            pthis.bl.append(chunk);
 
-        const current = bufferToString(pthis.bl);
-        if (isFirstWriter) {
-            if (pthis.bl.length < 100000) require("fs").writeFileSync(fn, current, "utf-8");
-        } else {
-            const etalon = require("fs").readFileSync(fn, "utf-8");
-            if (!etalon.startsWith(current)) {
-                console.log(`BREAKER_buffer_dump ${process.argv.join(" ")} ${callerHint}`);
-                console.log(`pthis \n${current}\n\n`);
-                for (let i = 0; i < current.length; i++) if (etalon[i] !== current[i]) debugger;
-                debugger;
+            const current = bufferToString(pthis.bl);
+            if (isFirstWriter) {
+                if (pthis.bl.length < 100000)
+                    require("fs").writeFileSync(fn, current, "utf-8");
+            } else {
+                const etalon = require("fs").readFileSync(fn, "utf-8");
+                if (!etalon.startsWith(current)) {
+                    console.log(`BREAKER_buffer_dump ${process.argv.join(" ")} ${callerHint}`);
+                    console.log(`pthis \n${current}\n\n`);
+                    for (let i = 0; i < current.length; i++) if (etalon[i] !== current[i]) debugger;
+                    debugger;
+                }
             }
-        }
 
-        // if(pthis.bl.length > 70000) {
-        //     console.log(`BREAKER_buffer_dump ${process.argv.join(' ')} ${callerHint}`);
-        //     console.log(`BREAKER_buffer_dump \n${(new Uint8Array(pthis.bl.slice(65400, 65700)).join(" "))}\n\n`);
-        //     pthis.dumped = true;
-        // }
-    }
-};
+            // if(pthis.bl.length > 70000) {
+            //     console.log(`BREAKER_buffer_dump ${process.argv.join(' ')} ${callerHint}`);
+            //     console.log(`BREAKER_buffer_dump \n${(new Uint8Array(pthis.bl.slice(65400, 65700)).join(" "))}\n\n`);
+            //     pthis.dumped = true;
+            // }
+        }
+    };
 //======================================================================================================================

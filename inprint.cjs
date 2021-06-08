@@ -2,12 +2,10 @@
 
 let inprint_main;
 try {
-    inprint_main = require("./lib/cjs/inprint/main.js").inprint;
-} catch (e) {
-    inprint_main = () => undefined;
-    console.warn(
-        `CODE00000000 Couldn't open ./lib/cjs/inprint/main.js - if its not yet compiled - ignore this warning!`
-    );
+	inprint_main = require("./lib/cjs/inprint/main.js").inprint
+} catch(e) {
+	inprint_main = ()=> undefined;
+	console.warn(`CODE00000000 Couldn't open ./lib/cjs/inprint/main.js - if its not yet compiled - ignore this warning!`);
 }
 
 module.exports = {
@@ -15,9 +13,5 @@ module.exports = {
     inprint: inprint_main,
     embeddedFeatures: "first",
     forceProcessTermination: true,
-    prettierOpts: {
-        filepath: __dirname,
-        ...require("JSON5").parse(require("fs").readFileSync("package.json", "utf-8"))?.prettier,
-        parser: "typescript",
-    },
+    prettierOpts: { filepath: __dirname, ...require("JSON5").parse(require("fs").readFileSync("package.json", "utf-8"))?.prettier, parser:"typescript"},
 };
