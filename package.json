@@ -56,7 +56,8 @@
         "clean": "yb clean_all && npm run clear:docs",
         "watch:test:cjs": "npm run build:cjs && jest --config=jest.config-cjs.cjs --passWithNoTests -w",
         "test:cjs": "npm run build:cjs && jest --config=jest.config-cjs.cjs --passWithNoTests",
-        "test:ts": "jest --config=jest.config-ts.cjs --passWithNoTests"
+        "test:ts": "jest --config=jest.config-ts.cjs --passWithNoTests",
+        "start": "node lib/cjs/start.js"
     },
     "resolutions": {},
     "devDependencies": {
@@ -103,7 +104,8 @@
         "@storybook/addon-essentials": "^6.2.9",
         "@storybook/addon-links": "^6.2.9",
         "@testing-library/react": "^11.2.7",
-        "@types/react": "^17.0.9"
+        "@types/react": "^17.0.9",
+        "modify-filepath": "^0.0.2"
     },
     "dependencies": {
         "@date-io/luxon": "1.3.13",
