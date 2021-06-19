@@ -10,144 +10,9 @@
   "pos": 538
  },
  {
-  "cpl": 119,
-  "filePath": "src\\client\\components\\Editor\\DateEditor.tsx",
-  "pos": 3210
- },
- {
-  "cpl": 120,
-  "filePath": "src\\client\\components\\Editor\\DurationEditor.tsx",
-  "pos": 3361
- },
- {
-  "cpl": 121,
-  "filePath": "src\\client\\components\\Editor\\EnumEditor.tsx",
-  "pos": 1814
- },
- {
-  "cpl": 116,
-  "filePath": "src\\client\\components\\Editor\\index.tsx",
-  "pos": 962
- },
- {
-  "cpl": 117,
-  "filePath": "src\\client\\components\\Editor\\index.tsx",
-  "pos": 1983
- },
- {
-  "cpl": 118,
-  "filePath": "src\\client\\components\\Editor\\index.tsx",
-  "pos": 2136
- },
- {
-  "cpl": 122,
-  "filePath": "src\\client\\components\\Editor\\LabelsEditor.tsx",
-  "pos": 1885
- },
- {
-  "cpl": 9,
-  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
-  "pos": 1825
- },
- {
-  "cpl": 10,
-  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
-  "pos": 1993
- },
- {
-  "cpl": 11,
-  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
-  "pos": 2399
- },
- {
-  "cpl": 123,
-  "filePath": "src\\client\\components\\Editor\\LinkEditor.tsx",
-  "pos": 3962
- },
- {
-  "cpl": 12,
-  "filePath": "src\\client\\components\\Editor\\MultiLinkEditor.tsx",
-  "pos": 2022
- },
- {
-  "cpl": 124,
-  "filePath": "src\\client\\components\\Editor\\MultiLinkEditor.tsx",
-  "pos": 3407
- },
- {
-  "cpl": 125,
-  "filePath": "src\\client\\components\\Editor\\TextEditor.tsx",
-  "pos": 1463
- },
- {
-  "cpl": 126,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 4476
- },
- {
-  "cpl": 127,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 5043
- },
- {
-  "cpl": 128,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 5608
- },
- {
-  "cpl": 129,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 6145
- },
- {
-  "cpl": 130,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 6667
- },
- {
-  "cpl": 1,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 7190
- },
- {
-  "cpl": 2,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 7812
- },
- {
-  "cpl": 3,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 18299
- },
- {
-  "cpl": 4,
-  "filePath": "src\\client\\components\\Editor\\zzz_Value_BAK_OLD.jsx",
-  "pos": 18495
- },
- {
-  "cpl": 114,
-  "filePath": "src\\client\\components\\MessageBox.tsx",
-  "pos": 4857
- },
- {
-  "cpl": 115,
-  "filePath": "src\\client\\components\\TaskList.tsx",
-  "pos": 3724
- },
- {
   "cpl": 208,
   "filePath": "src\\client\\models\\ActionAreaModel.ts",
   "pos": 1236
- },
- {
-  "cpl": 7,
-  "filePath": "src\\client\\models\\Editable_OLD.jsx",
-  "pos": 3315
- },
- {
-  "cpl": 8,
-  "filePath": "src\\client\\models\\Editable_OLD.jsx",
-  "pos": 10645
  },
  {
   "cpl": 5,
@@ -182,12 +47,12 @@
  {
   "cpl": 190,
   "filePath": "src\\client\\models\\MainModel.ts",
-  "pos": 1331
+  "pos": 1389
  },
  {
   "cpl": 14,
   "filePath": "src\\client\\models\\MainModel.ts",
-  "pos": 4004
+  "pos": 4135
  },
  {
   "cpl": 309,
@@ -212,32 +77,32 @@
  {
   "cpl": 303,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 5559
+  "pos": 5807
  },
  {
   "cpl": 289,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 5676
+  "pos": 5927
  },
  {
   "cpl": 290,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 5722
+  "pos": 5974
  },
  {
   "cpl": 203,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 6335
+  "pos": 6602
  },
  {
   "cpl": 13,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 6905
+  "pos": 7186
  },
  {
   "cpl": 200,
   "filePath": "src\\client\\models\\TaskModel.ts",
-  "pos": 7258
+  "pos": 7553
  },
  {
   "cpl": 297,
@@ -372,22 +237,22 @@
  {
   "cpl": 187,
   "filePath": "src\\server\\models\\task.ts",
-  "pos": 2393
+  "pos": 2454
  },
  {
   "cpl": 97,
   "filePath": "src\\server\\models\\task.ts",
-  "pos": 2931
+  "pos": 3005
  },
  {
   "cpl": 98,
   "filePath": "src\\server\\models\\task.ts",
-  "pos": 3326
+  "pos": 3411
  },
  {
   "cpl": 189,
   "filePath": "src\\server\\models\\task.ts",
-  "pos": 5059
+  "pos": 5247
  },
  {
   "cpl": 94,
@@ -623,45 +488,5 @@
   "cpl": 95,
   "filePath": "src\\Yoracle\\OracleStub.ts",
   "pos": 4088
- },
- {
-  "cpl": 294,
-  "filePath": "src\\Ystd\\expectOne.ts",
-  "pos": 525
- },
- {
-  "cpl": 295,
-  "filePath": "src\\Ystd\\expectOne.ts",
-  "pos": 588
- },
- {
-  "cpl": 278,
-  "filePath": "src\\Ystd\\globalHandler.ts",
-  "pos": 287
- },
- {
-  "cpl": 285,
-  "filePath": "src\\Ystd\\linearDataInterpolation.ts",
-  "pos": 1244
- },
- {
-  "cpl": 286,
-  "filePath": "src\\Ystd\\linearDataInterpolation.ts",
-  "pos": 1312
- },
- {
-  "cpl": 1008,
-  "filePath": "src\\Ystd\\manageableTimer.ts",
-  "pos": 3315
- },
- {
-  "cpl": 287,
-  "filePath": "src\\Ystd\\projectDir.ts",
-  "pos": 547
- },
- {
-  "cpl": 184,
-  "filePath": "src\\Ystd\\YTimeIntervals.ts",
-  "pos": 8204
  }
 ]
