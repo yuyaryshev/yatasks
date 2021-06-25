@@ -1,5 +1,5 @@
 import { observable } from "mobx";
-import { PersonModel } from "./PersonModel";
+import { PersonModel } from "./PersonModel.js";
 
 //import { notifyChanges } from "./MainModel";
 

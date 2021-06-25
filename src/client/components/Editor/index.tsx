@@ -2,15 +2,15 @@ import React from "react";
 import { useObserver } from "mobx-react-lite";
 
 import debugjs from "debug";
-import { Editable, getEditableMeta } from "../../models/ymeta";
-import { TextEditor } from "./TextEditor";
-import { BooleanEditor } from "./BooleanEditor";
-import { DateEditor } from "./DateEditor";
-import { DurationEditor } from "./DurationEditor";
-import { EnumEditor } from "./EnumEditor";
-import { LabelsEditor } from "./LabelsEditor";
-import { LinkEditor } from "./LinkEditor";
-import { MultiLinkEditor } from "./MultiLinkEditor";
+import { Editable, getEditableMeta } from "../../models/ymeta.js";
+import { TextEditor } from "./TextEditor.js";
+import { BooleanEditor } from "./BooleanEditor.js";
+import { DateEditor } from "./DateEditor.js";
+import { DurationEditor } from "./DurationEditor.js";
+import { EnumEditor } from "./EnumEditor.js";
+import { LabelsEditor } from "./LabelsEditor.js";
+import { LinkEditor } from "./LinkEditor.js";
+import { MultiLinkEditor } from "./MultiLinkEditor.js";
 
 const debugRender = debugjs("render");
 

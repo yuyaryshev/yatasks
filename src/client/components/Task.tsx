@@ -5,9 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 
 import debugjs from "debug";
-import { ytheme } from "./ytheme";
-import { TaskModel } from "../models/TaskModel";
-import { Editor } from "./Editor";
+import { ytheme } from "./ytheme.js";
+import { TaskModel } from "../models/TaskModel.js";
+import { Editor } from "./Editor/index.js";
 
 const debugRender = debugjs("render");
 

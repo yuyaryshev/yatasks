@@ -1,5 +1,5 @@
-import { TaskModel } from "./models/TaskModel";
-import { mainModel } from "./models";
+import { TaskModel } from "./models/TaskModel.js";
+import { mainModel } from "./models/index.js";
 
 export function startClientTemp() {
     setTimeout(function doClientTemp() {

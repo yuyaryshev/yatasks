@@ -1,4 +1,4 @@
-import { deserializeField, Table } from "./commonDbUtils";
+import { deserializeField, Table } from "./commonDbUtils.js";
 import { constant, Decoder, number, object, oneOf, optional, string } from "@mojotech/json-type-validation";
 
 export type PersonType = "team" | "other";

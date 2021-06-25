@@ -1,4 +1,4 @@
-import { YSemaphore, ysemaphore } from "../Ystd/ymutex";
+import { YSemaphore, ysemaphore } from "../Ystd/ymutex.js";
 import JiraClient from "jira-connector";
 
 import { Decoder, number, object } from "@mojotech/json-type-validation";

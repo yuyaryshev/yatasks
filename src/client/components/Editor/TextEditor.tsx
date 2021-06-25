@@ -5,8 +5,8 @@ import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 
 import debugjs from "debug";
-import { setter } from "../../models/editFunctions";
-import { TaskModel } from "../../models/TaskModel";
+import { setter } from "../../models/editFunctions.js";
+import { TaskModel } from "../../models/TaskModel.js";
 
 const debugRender = debugjs("render");
 

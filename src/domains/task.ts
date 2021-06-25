@@ -1,4 +1,4 @@
-import { deserializeField, Table } from "./commonDbUtils";
+import { deserializeField, Table } from "./commonDbUtils.js";
 import {
     array,
     boolean,

@@ -5,7 +5,7 @@ import {
     decoderSerializedPerson,
     PartialSerializedPerson,
     SerializedPerson,
-} from "../domains";
+} from "../domains/index.js";
 
 //----------------------------------------------------------------------------------------------------
 export interface SearchPersonApiRequest {

@@ -1,4 +1,4 @@
-import { OracleConnection0 } from "./OracleConnection0";
+import { OracleConnection0 } from "./OracleConnection0.js";
 import { fjmap, mergeConditions, strNvlT } from "ystd";
 
 export interface GetTableMetaOpts {

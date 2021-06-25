@@ -1,16 +1,16 @@
 import { observable } from "mobx";
-import { TaskListModel } from "./TaskListModel";
-import { TaskModel } from "./TaskModel";
-import { ActionAreaModel } from "./ActionAreaModel";
-import { PersonListModel } from "./PersonListModel";
-import { MessageBoxFunc, MessageBoxModel, registerMessageBox } from "../components/MessageBox";
-import { getEditableMeta, ymeta } from "./ymeta";
-import { PersonModel } from "./PersonModel";
-import { apiUrl } from "./myUrl";
+import { TaskListModel } from "./TaskListModel.js";
+import { TaskModel } from "./TaskModel.js";
+import { ActionAreaModel } from "./ActionAreaModel.js";
+import { PersonListModel } from "./PersonListModel.js";
+import { MessageBoxFunc, MessageBoxModel, registerMessageBox } from "../components/MessageBox.js";
+import { getEditableMeta, ymeta } from "./ymeta.js";
+import { PersonModel } from "./PersonModel.js";
+import { apiUrl } from "./myUrl.js";
 import axios from "axios";
-import { decoderSearchApiRequest, decoderSearchApiResponse, SearchTaskApiRequest } from "../../api";
-import { hasEdited, withDisabledAddEdited } from "./edited";
-import { syncArray } from "./common";
+import { decoderSearchApiRequest, decoderSearchApiResponse, SearchTaskApiRequest } from "../../api/index.js";
+import { hasEdited, withDisabledAddEdited } from "./edited.js";
+import { syncArray } from "./common.js";
 
 setInterval(() => {
     mainModel.testField = "X aa489a XX " + new Date().toISOString().substr(17);

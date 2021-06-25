@@ -6,11 +6,11 @@ import FormControl from "@material-ui/core/FormControl";
 import FormGroup from "@material-ui/core/FormGroup";
 
 import debugjs from "debug";
-import { TaskModel } from "../models/TaskModel";
-import { Editor } from "./Editor";
-import { ErrorBoundary } from "./ErrorBoundary";
-import { changer, setter } from "../models/editFunctions";
-import { dateChanger } from "./Editor/DateEditor";
+import { TaskModel } from "../models/TaskModel.js";
+import { Editor } from "./Editor/index.js";
+import { ErrorBoundary } from "./ErrorBoundary.js";
+import { changer, setter } from "../models/editFunctions.js";
+import { dateChanger } from "./Editor/DateEditor.js";
 
 const debugRender = debugjs("render");
 

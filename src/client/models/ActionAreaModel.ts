@@ -1,8 +1,8 @@
-import { saveTasks } from "./TaskModel";
-import { MainModel } from "./MainModel";
-import { notificationSuccess } from "../notifications";
-import { ymeta } from "./ymeta";
-import { clearProp } from "./editFunctions";
+import { saveTasks } from "./TaskModel.js";
+import { MainModel } from "./MainModel.js";
+import { notificationSuccess } from "../notifications.js";
+import { ymeta } from "./ymeta.js";
+import { clearProp } from "./editFunctions.js";
 
 export class ActionAreaModel {
     @ymeta({ et: "string" }) newTaskText: string = "";

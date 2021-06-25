@@ -9,10 +9,10 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 
 import debugjs from "debug";
-import { ytheme } from "./ytheme";
-import { TaskListModel } from "../models/TaskListModel";
-import { Task } from "./Task";
-import { toggler } from "../models/editFunctions";
+import { ytheme } from "./ytheme.js";
+import { TaskListModel } from "../models/TaskListModel.js";
+import { Task } from "./Task.js";
+import { toggler } from "../models/editFunctions.js";
 
 const debugRender = debugjs("render");
 

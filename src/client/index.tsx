@@ -1,19 +1,19 @@
-import { notificationSetup } from "./notifications";
+import { notificationSetup } from "./notifications.js";
 import React from "react";
 import { render } from "react-dom";
-import { Main as Main0 } from "./components/main";
-import { mainModel, MainModel } from "./models";
+import { Main as Main0 } from "./components/main.js";
+import { mainModel, MainModel } from "./models/index.js";
 import { SnackbarProvider, useSnackbar } from "notistack";
 import { useObserver } from "mobx-react-lite";
 
-import { apiUrl } from "./models/myUrl";
-import { ytheme } from "./components/ytheme";
-import { addSendChangesHandler, EditedObjects } from "./models/edited";
-import { saveTasks, TaskModel } from "./models/TaskModel";
-import { PersonModel, savePersons } from "./models/PersonModel";
+import { apiUrl } from "./models/myUrl.js";
+import { ytheme } from "./components/ytheme.js";
+import { addSendChangesHandler, EditedObjects } from "./models/edited.js";
+import { saveTasks, TaskModel } from "./models/TaskModel.js";
+import { PersonModel, savePersons } from "./models/PersonModel.js";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import LuxonUtils from "@date-io/luxon";
-import { startClientTemp } from "./clientTemp";
+import { startClientTemp } from "./clientTemp.js";
 
 const useHotReloading = process.env.hot;
 

@@ -1,9 +1,9 @@
 import better_sqlite3 from "better-sqlite3";
 
-import { jiraClean, JiraRequest, JiraRequestHandler, JiraStubInterface } from "./JiraWrapper";
+import { jiraClean, JiraRequest, JiraRequestHandler, JiraStubInterface } from "./JiraWrapper.js";
 import { awaitDelay, EnvWithTimers, manageableTimer, writeFileSyncIfChanged, ymutex } from "ystd";
 import { stringify } from "javascript-stringify";
-import { BatchWriter, batchWriter } from "./batchWriter";
+import { BatchWriter, batchWriter } from "./batchWriter.js";
 
 export interface JiraStubOptions {
     env: EnvWithTimers;

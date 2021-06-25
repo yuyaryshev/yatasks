@@ -10,8 +10,8 @@ import { Duration } from "luxon";
 
 import debugjs from "debug";
 import { aggDuration, durationObjToEngStr } from "Ystd";
-import { changer, setter } from "../../models/editFunctions";
-import { EditableOpts } from "../../models/ymeta";
+import { changer, setter } from "../../models/editFunctions.js";
+import { EditableOpts } from "../../models/ymeta.js";
 
 const debugRender = debugjs("render");
 

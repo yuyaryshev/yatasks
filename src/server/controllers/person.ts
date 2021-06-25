@@ -1,4 +1,4 @@
-import { Env } from "../startApiServer";
+import { Env } from "../startApiServer.js";
 //
 import { debugMsgFactory as debugjs } from "Ystd";
 import { Express } from "express";
@@ -14,7 +14,7 @@ import {
     PersonGetApiResponse,
     PersonPostApiResponse,
     SearchPersonApiResponse,
-} from "../../api/person";
+} from "../../api/person.js";
 
 const debug = debugjs("surveyApi");
 

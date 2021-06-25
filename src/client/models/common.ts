@@ -1,5 +1,5 @@
 import { DateTime, Settings } from "luxon";
-import { withDisabledAddEdited } from "./edited";
+import { withDisabledAddEdited } from "./edited.js";
 
 Settings.defaultLocale = "ru";
 

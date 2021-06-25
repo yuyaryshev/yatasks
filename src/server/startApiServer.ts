@@ -5,7 +5,7 @@ import { debugMsgFactory, ManageableTimer, yconsole } from "ystd";
 // import oracledb from "oracledb";
 // import { OracleConnection0 } from "Yoracle";
 import express from "express";
-import { publishApis } from "./controllers";
+import { publishApis } from "./controllers/index.js";
 import http from "http";
 import initDatabase, { Database } from "better-sqlite3";
 // @ts-ignore
@@ -13,8 +13,8 @@ import cors from "cors";
 // @ts-ignore
 import nodeSSPI from "express-node-sspi";
 
-import { TaskServerModel } from "./models";
-import { PersonServerModel } from "./models/person";
+import { TaskServerModel } from "./models/index.js";
+import { PersonServerModel } from "./models/person.js";
 
 const debug = debugMsgFactory("startup");
 

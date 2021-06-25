@@ -12,11 +12,11 @@ import MenuIcon from "@material-ui/icons/Menu";
 import InputBase from "@material-ui/core/InputBase";
 
 import debugjs from "debug";
-import { MainModel } from "../models";
-import { TaskList } from "./TaskList";
-import { ActionArea } from "./ActionArea";
-import { ytheme } from "./ytheme";
-import { TaskForm } from "./TaskForm";
+import { MainModel } from "../models/index.js";
+import { TaskList } from "./TaskList.js";
+import { ActionArea } from "./ActionArea.js";
+import { ytheme } from "./ytheme.js";
+import { TaskForm } from "./TaskForm.js";
 
 const debugRender = debugjs("render");
 

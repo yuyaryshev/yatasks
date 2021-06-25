@@ -1,6 +1,6 @@
 import { AckPacket } from "../types/common.types";
 import { array, boolean, Decoder, number, object, optional, string } from "@mojotech/json-type-validation";
-import { decoderPartialSerializedTask, decoderSerializedTask, PartialSerializedTask, SerializedTask } from "../domains";
+import { decoderPartialSerializedTask, decoderSerializedTask, PartialSerializedTask, SerializedTask } from "../domains/index.js";
 
 //----------------------------------------------------------------------------------------------------
 export interface SearchTaskApiRequest {

@@ -1,7 +1,7 @@
-import { PartialSerializedTask, rowToSerializedTask, SerializedTask, taskTable } from "../../domains";
+import { PartialSerializedTask, rowToSerializedTask, SerializedTask, taskTable } from "../../domains/index.js";
 import { Database, Statement } from "better-sqlite3";
-import { Env } from "../startApiServer";
-import { createTable, dropTable, isStringQuery, prepareTableFuncs, TableFuncs } from "../../domains/commonDbUtils";
+import { Env } from "../startApiServer.js";
+import { createTable, dropTable, isStringQuery, prepareTableFuncs, TableFuncs } from "../../domains/commonDbUtils.js";
 
 // export const decoderSurveyRepository: Decoder<SurveyRepository> = object({
 //     surveys: dict(decoderSurvey),

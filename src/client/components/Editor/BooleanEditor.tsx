@@ -5,8 +5,8 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 import debugjs from "debug";
-import { setter, toggler } from "../../models/editFunctions";
-import { Editable } from "../../models/ymeta";
+import { setter, toggler } from "../../models/editFunctions.js";
+import { Editable } from "../../models/ymeta.js";
 
 const debugRender = debugjs("render");
 

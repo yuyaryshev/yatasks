@@ -1,5 +1,5 @@
 import { observable } from "mobx";
-import { TaskModel } from "./TaskModel";
+import { TaskModel } from "./TaskModel.js";
 
 //import { notifyChanges } from "./MainModel";
 

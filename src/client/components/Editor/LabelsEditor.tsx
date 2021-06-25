@@ -5,8 +5,8 @@ import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
 import debugjs from "debug";
-import { setter } from "../../models/editFunctions";
-import { getEditableMeta } from "../../models/ymeta";
+import { setter } from "../../models/editFunctions.js";
+import { getEditableMeta } from "../../models/ymeta.js";
 
 const debugRender = debugjs("render");
 

@@ -1,14 +1,14 @@
 import axios from "axios";
-import { PersonType, PersonTypeValues, SerializedPerson } from "../../domains";
-import { copyPrimitiveFields, syncArray } from "./common";
+import { PersonType, PersonTypeValues, SerializedPerson } from "../../domains/index.js";
+import { copyPrimitiveFields, syncArray } from "./common.js";
 import { v4 as newId } from "uuid";
-import { addEdited, hasEdited, withDisabledAddEdited } from "./edited";
-import { apiUrl } from "./myUrl";
-import { decoderCurrentPersonsApiResponse, decoderPersonPostApiRequest, decoderPersonPostApiResponse } from "../../api";
-import { notificationError } from "../notifications";
+import { addEdited, hasEdited, withDisabledAddEdited } from "./edited.js";
+import { apiUrl } from "./myUrl.js";
+import { decoderCurrentPersonsApiResponse, decoderPersonPostApiRequest, decoderPersonPostApiResponse } from "../../api/index.js";
+import { notificationError } from "../notifications.js";
 //import { notifyChanges } from "./MainModel";
-import { Editable, ymeta } from "./ymeta";
-import { mainModel } from "./MainModel";
+import { Editable, ymeta } from "./ymeta.js";
+import { mainModel } from "./MainModel.js";
 
 const REFRESH_CURRENT_PERSONS_INTERVAL = undefined; // 999999 * 60 * 60 * 1000;
 

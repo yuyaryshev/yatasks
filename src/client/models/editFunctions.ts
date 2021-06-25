@@ -1,5 +1,5 @@
-import { Editable, EditableOpts, getEditableMeta } from "./ymeta";
-import { addEdited } from "./edited";
+import { Editable, EditableOpts, getEditableMeta } from "./ymeta.js";
+import { addEdited } from "./edited.js";
 import {action} from "mobx";
 
 export interface ActionFuncs {

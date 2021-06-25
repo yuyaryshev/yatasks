@@ -6,7 +6,7 @@ import Paper from "@material-ui/core/Paper";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import debugjs from "debug";
-import { ytheme } from "./ytheme";
+import { ytheme } from "./ytheme.js";
 
 const debugRender = debugjs("render");
 

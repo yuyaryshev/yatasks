@@ -10,9 +10,9 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 
 import debugjs from "debug";
-import { MainModel } from "../models";
-import { MainPage } from "./MainPage";
-import { MessageBox } from "./MessageBox";
+import { MainModel } from "../models/index.js";
+import { MainPage } from "./MainPage.js";
+import { MessageBox } from "./MessageBox.js";
 
 const debugRender = debugjs("render");
 const useStyles = makeStyles((theme: Theme) =>

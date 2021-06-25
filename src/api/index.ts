@@ -1,2 +1,2 @@
-export * from "./task";
-export * from "./person";
+export * from "./task.js";
+export * from "./person.js";

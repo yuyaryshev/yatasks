@@ -1,6 +1,6 @@
 // import block
 import { debugMsgFactory, globalHandler } from "ystd";
-import { startEnv } from "./server/startApiServer";
+import { startEnv } from "./server/startApiServer.js";
 
 // currently unused
 const debug = debugMsgFactory("run");

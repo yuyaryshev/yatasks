@@ -4,9 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 
 import debugjs from "debug";
-import { ytheme } from "./ytheme";
-import { ActionAreaModel } from "../models/ActionAreaModel";
-import { setter } from "../models/editFunctions";
+import { ytheme } from "./ytheme.js";
+import { ActionAreaModel } from "../models/ActionAreaModel.js";
+import { setter } from "../models/editFunctions.js";
 
 const debugRender = debugjs("render");
 

@@ -1,5 +1,5 @@
 import better_sqlite3 from "better-sqlite3";
-import { OracleConnection0 } from "./OracleConnection0";
+import { OracleConnection0 } from "./OracleConnection0.js";
 import { BindParameters, ExecuteManyOptions, Promise, Result, Results } from "oracledb";
 import { dbgStringify, isNumber, strReplace } from "ystd";
 

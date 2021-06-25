@@ -1,5 +1,5 @@
 import { debugMsgFactory, yconsole } from "ystd";
-import { OracleConnection0 } from "./OracleConnection0";
+import { OracleConnection0 } from "./OracleConnection0.js";
 
 const debugSql = debugMsgFactory("sql");
 
