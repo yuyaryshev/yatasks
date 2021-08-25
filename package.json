@@ -61,7 +61,9 @@
         "clean:frontend": "yb clean_frontend",
         "build:frontend": "npm run precompile && npm run clean:frontend && webpack-cli --mode production --config webpack.frontend.config.cjs",
         "watch:frontend": "npm run precompile && npm run clean:frontend && webpack-cli --mode development --config webpack.frontend.config.cjs -w",
-        "dev_server": "npm run precompile && webpack-cli serve --mode development --config webpack.frontend.config.cjs"
+        "dev_server": "npm run precompile && webpack-cli serve --mode development --config webpack.frontend.config.cjs",
+        "build_lite": "npm run precompile_full && npm run clean && npm run build:esm && npm run build:cjs && npm run build:types && npm run build:docs",
+        "republish_forced": "npm run build_lite && npx version-select && yb genprojmeta && npm publish"
     },
     "resolutions": {},
     "devDependencies": {
