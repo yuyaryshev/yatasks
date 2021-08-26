@@ -30,17 +30,8 @@ export const defaultJiraStubOptions = {
 
 export const makeJiraStub = (opts0: JiraStubOptions): JiraStubInterface => {
     const opts = Object.assign({}, defaultJiraStubOptions, opts0);
-    const {
-        console,
-        filename,
-        forwardMode,
-        handler,
-        responseDelay,
-        limit,
-        limitReleaseDelay,
-        env,
-        errorStateChanged,
-    } = opts;
+    const { console, filename, forwardMode, handler, responseDelay, limit, limitReleaseDelay, env, errorStateChanged } =
+        opts;
     const dbMode = filename && filename.endsWith(".db");
     const m = new Map<string, any>();
     const jiraStubWriteRequestsToFileTimer = manageableTimer(

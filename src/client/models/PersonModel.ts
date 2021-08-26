@@ -4,7 +4,11 @@ import { copyPrimitiveFields, syncArray } from "./common.js";
 import { v4 as newId } from "uuid";
 import { addEdited, hasEdited, withDisabledAddEdited } from "./edited.js";
 import { apiUrl } from "./myUrl.js";
-import { decoderCurrentPersonsApiResponse, decoderPersonPostApiRequest, decoderPersonPostApiResponse } from "../../api/index.js";
+import {
+    decoderCurrentPersonsApiResponse,
+    decoderPersonPostApiRequest,
+    decoderPersonPostApiResponse,
+} from "../../api/index.js";
 import { notificationError } from "../notifications.js";
 //import { notifyChanges } from "./MainModel";
 import { Editable, ymeta } from "./ymeta.js";

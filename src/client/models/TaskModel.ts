@@ -27,7 +27,7 @@ export class TaskModel implements Editable {
     id: number = 0;
     uid: string = newId();
 
-    @observable name2:string = "";
+    @observable name2: string = "";
 
     @ymeta({ et: "string" }) name: string = "";
     @ymeta({ et: "enum", values: TaskTypeValues, defaultValue: "plain" }) type: TaskType = "plain";

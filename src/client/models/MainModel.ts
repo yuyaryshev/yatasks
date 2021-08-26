@@ -21,7 +21,9 @@ export const TaskModelLinkOpts = {
     getAutocompleteItemsSync: () => mainModel.tasks.items,
     getAutocompleteItemsAsync: async (q: string) => {
         try {
-            const resp0 = await axios.get(apiUrl() + "/api/search", { params: decoderSearchApiRequest.runWithException({ q }) });
+            const resp0 = await axios.get(apiUrl() + "/api/search", {
+                params: decoderSearchApiRequest.runWithException({ q }),
+            });
             const { tasks } = decoderSearchApiResponse.runWithException(resp0?.data);
             return tasks;
         } catch (e) {
@@ -50,7 +52,7 @@ export class MainModel {
 
     @ymeta({ et: "link", ...TaskModelLinkOpts }) currentTask: TaskModel | undefined;
     @ymeta({ et: "string", defaultValue: "XXX2" }) testField: string = "XXX2";
-//    @observable testField: string = "XXX2";
+    //    @observable testField: string = "XXX2";
 
     @observable drawerOpen: boolean = false;
 

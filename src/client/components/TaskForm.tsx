@@ -75,7 +75,6 @@ export const TaskForm: React.FC<{ m: TaskModel }> = ({ m }) => {
                 <Editor object={m} property="waitType" editor />
                 <Editor object={m} property="waitDate" editor />
                 <Editor object={m} property="testlink" editor />
-
                 {/*<Button*/}
                 {/*    className={classes.surveyFinishButton}*/}
                 {/*    variant="contained"*/}
